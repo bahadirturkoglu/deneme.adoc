@@ -174,9 +174,9 @@ image::resim1.31.png[R]
 
 Bu adımdan sonra kart üzerinde ledin yanıp söndüğünü göreceksiniz. +
 
- “*Debug*”ın durdurulması
+“*Debug*”ın durdurulması
  
- image::resim1.32.png[R]
+image::resim1.32.png[R]
 
 
 
