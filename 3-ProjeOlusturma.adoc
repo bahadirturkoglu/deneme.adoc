@@ -121,7 +121,7 @@ Proje derlendikten sonra “*Binaries*”in altında projeye ait çalıştırıl
 
 image::resim1.24.png[R]
 
-* *“Debugger”ın ayarlanması*
+* *“Debugger”ın ayarlanması* +
 Debug ikonunun yanındaki aşağı oka tıklayıp “*Debug Configurations*”u açınız. + 
 (Veya proje ismine sağ tıklayıp “Debug As” menüsü altından “Debug Configurations”a tıklayınız) +
 
