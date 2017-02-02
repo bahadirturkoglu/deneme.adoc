@@ -2,10 +2,10 @@
 
 * 1.1. İçindekiler 
 
-. Sistem programlama dersine yönelik program kurulumu +
+. Sistem programlama dersine yönelik program kurulumu 
 .. İçindekiler
 .  Giriş
-.. 1.2.1. KOU Paket Yükleyici Programı
+...  KOU Paket Yükleyici Programı
 
 *1.2. Giriş*
 Sistem Programlama için kullanılacak geliştirme programlarının kurulumu ve ayarlananması anlatılacaktır.
