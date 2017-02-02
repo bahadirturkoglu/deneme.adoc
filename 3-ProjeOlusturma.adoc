@@ -125,6 +125,14 @@ image::resim1.24.png[R]
 Debug ikonunun yanındaki aşağı oka tıklayıp “*Debug Configurations*”u açınız. + 
 (Veya proje ismine sağ tıklayıp “Debug As” menüsü altından “Debug Configurations”a tıklayınız) +
 
+image::resim1.25.png[R]
+
+Soldaki menüden “*GDB OpenOCD Debugging*” seçeneğini çift tıklayınız. +
+
+image::resim.1.26.png[R]
+
+Debugger menüsünü açınız.
+
 
 
 
