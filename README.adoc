@@ -45,7 +45,25 @@ image::resim1.2.8.png[R]
 
 “password” = 1 tane boşluk karakteri (space)
 
-image::resim1.2.9.png[R]
+image::resim1.2.9.png.jpg[R]
+
+İşlemin tamamlanmasını bekleyiniz. İşlem biraz uzun sürebilir.
+
+image::resim1.2.10.png.[R]
+
+image::resim1.2.11.png.[R]
+
+Kurulum bittikten sonra “Başlat” menüsünden “Development” menüsü altındaki  “KOU Eclipse” tıklayınız. +
+
+image::resim1.2.12.png.[R]
+
+Herhangi bir seçim yapmadan “OK”e basınız. +
+
+image::resim1.2.13.png.[R]
+
+Programımız kullanıma hazır hale gelmiştir. +
+
+image::resim1.2.14.png.[R]
 
   
 
