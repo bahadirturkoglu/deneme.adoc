@@ -1,0 +1,16 @@
+= 1. Sistem programlama dersine yönelik program kurulumu
+
+* 1.1. İçindekiler * 
+
+1. Sistem programlama dersine yönelik program kurulumu
+1.1. İçindekiler
+. 1.2. Giriş
+.. 1.2.1. KOU Paket Yükleyici Programı
+
+*1.2. Giriş*
+Sistem Programlama için kullanılacak geliştirme programlarının kurulumu ve ayarlananması anlatılacaktır.
+
+*1.2.1. KOU Paket Yükleyici Programı*
+
+VirtualBox ‘ın içine “xubuntu-kouembedded-v20160217.ova” isimli sanal makine kalıbı aktarıldıktan sonra masaüstünde KOU Paket Yükleyici isimli bir program görünecektir. 
+
