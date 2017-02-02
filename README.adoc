@@ -1,10 +1,10 @@
 = 1. Sistem programlama dersine yönelik program kurulumu
 
-* 1.1. İçindekiler 
+* İçindekiler *
 
 . Sistem programlama dersine yönelik program kurulumu 
-.. İçindekiler
-.  Giriş
+. İçindekiler
+.. Giriş
 ...  KOU Paket Yükleyici Programı
 
 *1.2. Giriş*
