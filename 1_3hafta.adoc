@@ -13,3 +13,11 @@
 .. Kartın sanal makineye aktarılması
 .. Debug işlemi
 
+* *Gerekli Dosyalar*
+Stellaris Launchpad kullananlar için: Stellaris_Launchpad.tar.gz +
+https://drive.google.com/file/d/0Bw8VB6WrbOkiSmptUHhGYVAwMzg/view?usp=sharing/
+
+Tiva C Launch kullananlar için : Tiva_C_Launchpad.tar.gz +
+https://drive.google.com/file/d/0Bw8VB6WrbOkiYWFnX0hqWl9HbWM/view?usp=sharing/
+
+
