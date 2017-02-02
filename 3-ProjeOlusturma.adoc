@@ -162,6 +162,23 @@ Sanal  makine  penceresinin  altından  USB  simgesine  sağ  tıklayıp,  “*T
 
 *NOT*: Eğer bu işlemde USB aygıtın ismini görüp seçemiyorsanız (gri görünüyorsa) veya hiçbir USB aygıt görünmüyorsa “*Kurulum Problemleri*” dokümanına bakınız +
 
+* *Debug işlemi*
+ 
+Aşağıdaki gibi  kırmızı ile işaretli olan  debug seçeneğini çalıştırın. +
+
+image::resim1.30.png[R]
+
+Eğer  debug  menüsünde  görünmüyorsa “*1.4. Debugger”ın ayarlanması*” başlığındaki gibi  “*Debug Configurations*”u açıp, proje ile ilgili olan seçeneği seçip Debug buttonuna basınız.
+
+image::resim1.31.png[R]
+
+Bu adımdan sonra kart üzerinde ledin yanıp söndüğünü göreceksiniz. +
+
+ “*Debug*”ın durdurulması
+ 
+ image::resim1.32.png[R]
+
+
 
 
 
