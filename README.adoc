@@ -23,6 +23,9 @@ Masaüstündeki”Kou Paket Yükleyici”ye tıklayınız. +
 
 image::resim1.2.2.png[R]
 
+“Yes”e tıklayınız.
+
+
  
  
 password = 1 tane boşluk karakteri (space) +
