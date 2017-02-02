@@ -30,6 +30,8 @@ image::resim1.2.3.png[R]
 password = 1 tane boşluk karakteri (space) +
 
 image::resim1.2.5.png.jpg[R]
+
+İşlemin tamamlanmasını bekleyiniz. İşlem biraz uzun sürebilir. +
   
 
 
