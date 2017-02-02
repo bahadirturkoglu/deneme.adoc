@@ -145,6 +145,23 @@ Ardından “*Apply*” buttonuna bastıktan sonra pencereyi kapatınız. +
 
 Öncelikle geliştirme kartını USB bağlantısı ile bilgisayarınıza bağlayınız. +
 
+image::resim1.28.jpg[R]
+
+
+USB  kablosunu  şekilde sarı renkle işaretlenmiş  “*USB  ICDI*”  yazan  kısma  bağlayınız. +
+
+“*Power  selection*” yazan  kısımdaki  switch’in  “*debug*”  yazan  tarafta  olduğundan  emin  olun. +
+
+Çalıştığında üst tarafta yeşil ledin yandığını göreceksiniz. +
+
+Ardınan USB bağlantısını aşağıdaki gibi sanal makineye aktarınız. +
+
+image::resim1.2.png[R]
+
+Sanal  makine  penceresinin  altından  USB  simgesine  sağ  tıklayıp,  “*Texas  Instruments In­Circuit ...*” aygıtını seçili yapın. +
+
+*NOT*: Eğer bu işlemde USB aygıtın ismini görüp seçemiyorsanız (gri görünüyorsa) veya hiçbir USB aygıt görünmüyorsa “*Kurulum Problemleri*” dokümanına bakınız +
+
 
 
 
