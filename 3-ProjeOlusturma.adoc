@@ -86,7 +86,7 @@ Açılan pencerede gerekli düzenlemeleri yapınız. +
 
 *DİKKAT: Düzenlemeler bitene kadar “OK” butonuna basmayınız.*
 
-image::resim1.12.png[R]
+image::resim1.12.jpg[R]
 
 “*Cross ARM C*” compiler altından “Includes”i açınız +
 
