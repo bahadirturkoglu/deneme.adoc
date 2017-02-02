@@ -2,9 +2,9 @@
 
 * 1.1. İçindekiler 
 
-1. Sistem programlama dersine yönelik program kurulumu +
-1.1. İçindekiler
-. 1.2. Giriş
+. Sistem programlama dersine yönelik program kurulumu +
+.. İçindekiler
+.  Giriş
 .. 1.2.1. KOU Paket Yükleyici Programı
 
 *1.2. Giriş*
