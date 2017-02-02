@@ -96,6 +96,10 @@ image::resim1.14.png[R]
 image::resim1.15.png[R]
 image::resim1.16.png[R]
 
+*Uyarı*: Eğer Tiva C kartını kullanıyorsanız klasörün ismi “*SW-TM4C-2.1.2.111*” şeklinde görünecektir. +
+
+image::resim1.17.png[R]
+
 
 
 
