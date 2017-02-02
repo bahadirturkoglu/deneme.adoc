@@ -37,7 +37,16 @@ image::resim1.2.6.png[R]
 
 image::resim1.2.7.png[R]
 
-İşlem tamamlandı pencereyi kapatınız.
+İşlem tamamlandı pencereyi kapatınız. +
+
+“Başlat” menüsünden “Development” menüsü altındaki  “KOU Eclipse” tıklayınız. +
+
+image::resim1.2.8.png[R]
+
+“password” = 1 tane boşluk karakteri (space)
+
+image::resim1.2.9.png[R]
+
   
 
 
