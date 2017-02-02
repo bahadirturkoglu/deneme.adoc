@@ -60,6 +60,8 @@ image::resim1.7.png[R]
 
 İndirilmiş olan kütüphane arşivini aktarmak için ana makineden sanal makinenin masaüstündeki herhangi boş bir alana sürükleyiniz. +
 
+image::resim1.8.jpg[R]
+
 
 
 
