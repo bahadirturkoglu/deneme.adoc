@@ -54,7 +54,12 @@ image::resim1.6.png[R]
 
 * *Dosyaların projeye kopyalanması*
 
-Ana makineden sanal makineye sürükle-bırak özelliğini aktifleştirmek için “Aygıtlar” bölümünden resimde gösterilen adımları uygulayınız.  
+Ana makineden sanal makineye sürükle-bırak özelliğini aktifleştirmek için “Aygıtlar” bölümünden resimde gösterilen adımları uygulayınız. +
+
+image::resim1.7.png[R]
+
+İndirilmiş olan kütüphane arşivini aktarmak için ana makineden sanal makinenin masaüstündeki herhangi boş bir alana sürükleyiniz. +
+
 
 
 
