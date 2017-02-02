@@ -19,6 +19,6 @@ image::resim1.2.png[R]
 Masaüstündeki”Kou Paket Yükleyici”ye tıklayınız. +
 
 
-”Sistem Programlama Programları”nı seçiniz ve “Kaydet”e tıklıyanız.
+”Sistem Programlama Programları”nı seçiniz ve “Kaydet”e tıklıyanız. +
 
-image::resim1.2.2png[R]
+image::resim1.2.2.png[R]
