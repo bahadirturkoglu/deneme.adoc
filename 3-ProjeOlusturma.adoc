@@ -107,6 +107,14 @@ image::resim1.19.png[R]
 image::resim1.20.png[R]
 
 
+*Uyarı*: Tiva C kartını kullanıyorsanız dosyanın ismi TM4C.ld şeklinde görünecektir. +
+
+image::resim1.21.png[R]
+image::resim1.22.png[R]
+
+
+
+
 
 
 
