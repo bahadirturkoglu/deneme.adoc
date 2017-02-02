@@ -7,7 +7,7 @@
 .. Giriş
 ...  KOU Paket Yükleyici Programı
 
-*Giriş*
+*Giriş* +
 Sistem Programlama için kullanılacak geliştirme programlarının kurulumu ve ayarlananması anlatılacaktır.
 
 *KOU Paket Yükleyici Programı*
