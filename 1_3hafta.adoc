@@ -1,6 +1,6 @@
 = Sistem programlama dersine yönelik proje oluşturma, derleme, programı karta aktarma ve hata ayıklama +
 
-* İçindekiler 
+* *İçindekiler* +
 . Sistem programlama dersine yönelik proje oluşturma, derleme, programı karta aktarma ve hata ayıklama
 . İçindekiler
 .. Gerekli Dosyalar
