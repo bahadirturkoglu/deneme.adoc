@@ -1,4 +1,4 @@
-= 1. Sistem programlama dersine yönelik program kurulumu
+=  Sistem programlama dersine yönelik program kurulumu
 
 * İçindekiler 
 
