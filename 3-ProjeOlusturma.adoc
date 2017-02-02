@@ -156,7 +156,7 @@ USB  kablosunu  şekilde sarı renkle işaretlenmiş  “*USB  ICDI*”  yazan  
 
 Ardınan USB bağlantısını aşağıdaki gibi sanal makineye aktarınız. +
 
-image::resim1.2.png[R]
+image::resim1.29.png[R]
 
 Sanal  makine  penceresinin  altından  USB  simgesine  sağ  tıklayıp,  “*Texas  Instruments In­Circuit ...*” aygıtını seçili yapın. +
 
