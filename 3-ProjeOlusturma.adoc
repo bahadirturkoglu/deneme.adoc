@@ -112,6 +112,16 @@ image::resim1.20.png[R]
 image::resim1.21.png[R]
 image::resim1.22.png[R]
 
+* *Projeyi derleme*
+Projeyi seçiniz ve “*Build*” ikonuna tıklayınız. (Veya projeyi sağ tıklayıp “Build Project”e tıklayınız) +
+
+image::resim1.23.png[R]
+
+Proje derlendikten sonra “*Binaries*”in altında projeye ait çalıştırılabilir dosya oluşacaktır. +
+
+image::1.24.png[R]
+
+
 
 
 
