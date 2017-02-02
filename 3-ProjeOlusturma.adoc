@@ -129,9 +129,22 @@ image::resim1.25.png[R]
 
 Soldaki menüden “*GDB OpenOCD Debugging*” seçeneğini çift tıklayınız. +
 
-image::resim.1.26.png[R]
+image::resim1.26.png[R]
 
 Debugger menüsünü açınız.
+
+image::resim1.27.png[R]
+
+“*Config options*” alanına yazacağınız ifadeyi şu linkten kopyalayabilirsiniz: +
+
+https://drive.google.com/file/d/0Bw8VB6WrbOkiVWtUb3BSTGhaM28/view?usp=sharing/
+
+Ardından “*Apply*” buttonuna bastıktan sonra pencereyi kapatınız. +
+
+* *Kartın sanal makineye aktarılması*
+
+Öncelikle geliştirme kartını USB bağlantısı ile bilgisayarınıza bağlayınız. +
+
 
 
 
