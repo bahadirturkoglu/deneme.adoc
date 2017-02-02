@@ -100,6 +100,13 @@ image::resim1.16.png[R]
 
 image::resim1.17.png[R]
 
+“*Cross Arm C Linker*” altından “General”i ve kırmızı ile açınız. +
+
+image::resim1.18.png[R]
+image::resim1.19.png[R]
+image::resim1.20.png[R]
+
+
 
 
 
