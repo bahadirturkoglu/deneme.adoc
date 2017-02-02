@@ -174,11 +174,11 @@ image::resim1.31.png[R]
 
 Bu adımdan sonra kart üzerinde ledin yanıp söndüğünü göreceksiniz. +
 
-“*Debug*”ın durdurulması
+“*Debug*” ın durdurulması
  
 image::resim1.32.png[R]
 
-Açık unutulmuş “*Debug*ların durdurulması +
+Açık unutulmuş “*Debug*”ların durdurulması +
 
 Programın  tekrar  çalıştırılması  için,  önceki  çalışmadan  kalan  debuggerın  durdurulması  gerekmektedir.  Program  durdurulmadan  başka bir program debug edilmeye çalışıldığında aşağıdaki hata mesajı ile karşılaşılabilir. +
 
