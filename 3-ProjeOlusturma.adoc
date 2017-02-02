@@ -26,5 +26,35 @@ Eclipse geliştirme ortamında kartımız için proje oluşturma anlatılmışt�
 
 “KOU Eclipse”i açınız.
 
+image::resim.png[R]
+
+File menüsünden “New” -> “*Project*” seçeneğini tıklayınız. +
+
+image::resim1.1.png[R]
+
+C/C++ altından C Project seçeneğini seçiniz +
+
+image::resim1.2.png[R]
+
+Proje ismi giriniz. Ardınan proje seçeneklerini aşağıdaki resimdeki ile aynı şekilde seçip Next’e basınız. +
+
+image::resim1.3.png[R]
+
+Bir değişiklik yapmadan “Next”e basınız. +
+
+image::resim1.4.png[R]
+
+“Finish”e basınız. +
+
+image::resim1.5.png[R]
+
+Proje geliştirme ortamına geçmeniz için işaretlenmiş alana tıklayınız. +
+
+image::resim1.6.png[R]
+
+* *Dosyaların projeye kopyalanması*
+
+Ana makineden sanal makineye sürükle-bırak özelliğini aktifleştirmek için “Aygıtlar” bölümünden resimde gösterilen adımları uygulayınız.  
+
 
 
