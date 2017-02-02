@@ -67,6 +67,39 @@ image::resim1.8.jpg[R]
 
 Ana makineden sanal makineye atılan arşivdeki dosyaları resimdeki gibi çıkartınız. +
 
+image::resim1.9.png[R]
+
+Arşivden çıkartılmış olan klasörü açınız ve içindeki 2 klasörü daha önceden oluşturduğumuz projenin üstüne sürükleyip bırakınız. (Veya sağ tıklayıp kopyalayıp, Eclipse içinde proje ismine sağ tıklayıp yapıştıra basınız) +
+
+image::resim1.10.png[R]
+
+Karşınıza çıkan kopyalama penceresinde “*OK*” butonuna basınız. +
+
+image::resim1.11.png[R]
+
+* *Proje ayarları*
+Proje isminde sağa tıklayarak açılan bölümde “Properties”e tıklayınız. +
+
+image::resim1.12.jpg[R]
+
+Açılan pencerede gerekli düzenlemeleri yapınız. +
+
+*DİKKAT: Düzenlemeler bitene kadar “OK” butonuna basmayınız.*
+
+image::resim1.12.png[R]
+
+“*Cross ARM C*” compiler altından “Includes”i açınız +
+
+image::resim1.13.png[R]
+image::resim1.14.png[R]
+image::resim1.15.png[R]
+
+
+
+
+
+
+
 
 
 
