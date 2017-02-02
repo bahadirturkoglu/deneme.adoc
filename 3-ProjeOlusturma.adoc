@@ -62,6 +62,13 @@ image::resim1.7.png[R]
 
 image::resim1.8.jpg[R]
 
+*Uyarı*: Stellaris kartını kullanıyorsanız “Stellaris_Launchpad.tar.gz”, Tiva C kartını kullanıyorsanız “Tiva_C_Launchpad.tar.gz” isimli dosyayı kullanmalısınız +
+
+
+Ana makineden sanal makineye atılan arşivdeki dosyaları resimdeki gibi çıkartınız. +
+
+
+
 
 
 
