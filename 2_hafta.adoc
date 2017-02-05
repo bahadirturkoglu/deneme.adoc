@@ -35,9 +35,9 @@ http://users.ece.utexas.edu/~valvano/Volume1/E-Book/C6_MicrocontrollerPorts.htm#
  *“6.3. I/O Programming and the Direction Register”* başlığı altındaki *“Interactive Tool 6.1”* kısmından inceleyebilirsiniz. +
  
 = LED yakip söndürme örneği
-Bu örnek çalıştırıldığında kırmızı led yanacak biraz bekledikten sonra sönecek, biraz bekledikten sonra da mavi led yanacak ve biraz + bekledikten sonra mavi led de sönecek ve biraz bekleyecek. Bu sonsuz döngü içinde tekrarlanacak. +
+Bu örnek çalıştırıldığında kırmızı led yanacak biraz bekledikten sonra sönecek, biraz bekledikten sonra da mavi led yanacak ve biraz  bekledikten sonra mavi led de sönecek ve biraz bekleyecek. Bu sonsuz döngü içinde tekrarlanacak. +
 
-[source,c]
+[source,]
 ---------------------------------------------------------------------
 
 
@@ -95,6 +95,8 @@ int main(void) {
 }
 
 ---------------------------------------------------------------------
+
+
 
 
 
