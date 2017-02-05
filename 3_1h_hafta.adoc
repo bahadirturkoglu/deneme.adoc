@@ -1,2 +1,0 @@
-= ÖNEMLİ: Proje Dosyası Güncellemesi
-07.03.2016 tarihinde hazır proje dosyalarında (Stellaris_Launchpad.tar.gz ve Tiva_C_Launchpad.tar.gz) güncelleme yapılmıştır. Son güncellemeyle proje klasörü altında utils/uartstdio.c ve utils/uartstdio.h dosyaları eklenmiştir.
