@@ -164,7 +164,9 @@ else {
 GPIO_PORTE_DATA_R &= ~(0x02); //  portE in 1.bitini çıkış yap  kırmızı ledi söndür
   	GPIO_PORTE_DATA_R &= ~(0x04); // portE in 2.bitini çıkış yap  mavi  ledi södür
   	 GPIO_PORTE_DATA_R |= 0x09; // portE in 3. Bitini çıkış yap yeşil ledi yak
-  	 }}}
+  	 }
+      }
+   }
 	 
 ---------------------------------------------------------------------	 
 
