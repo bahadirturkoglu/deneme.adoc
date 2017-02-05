@@ -37,7 +37,7 @@ http://users.ece.utexas.edu/~valvano/Volume1/E-Book/C6_MicrocontrollerPorts.htm#
 = LED yakip söndürme örneği
 Bu örnek çalıştırıldığında kırmızı led yanacak biraz bekledikten sonra sönecek, biraz bekledikten sonra da mavi led yanacak ve biraz  bekledikten sonra mavi led de sönecek ve biraz bekleyecek. Bu sonsuz döngü içinde tekrarlanacak. +
 
-[source,]
+[source,python]
 ---------------------------------------------------------------------
 
 
