@@ -2,7 +2,7 @@
 
 
 Stellaris Launchpad üzerinde 2 button(reset butonu hariç) ve 3 led bulunur. Bu led ve butonlar  PORT F’ye bağlıdır. PORT F’deki yerleşimleri aşağıdaki gibidir:
-Şekil 1’de *2* ve *3* numara Stellaris kartının üzerindeki butonları, *Yeşil noktala*r  ise PORTF’nin pinlerini göstermektedir. +
+Şekil 1’de *2* ve *3* numara Stellaris kartının üzerindeki butonları, *Yeşil noktalar*  ise PORTF’nin pinlerini göstermektedir. +
 
 image::Capture4.PNG[R]
 
