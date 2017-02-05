@@ -112,6 +112,9 @@ int main() {
 
 ---------------------------------------------------------------------
 
+image::Capture5.PNG[R]
+image::Capture6.PNG[R]
+
 
 
 = PORTE’ye Dışardan Buton Bağlama
