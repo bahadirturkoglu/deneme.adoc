@@ -14,6 +14,8 @@ Stellaris Launchpad üzerinde 2 button(reset butonu hariç) ve 3 led bulunur. Bu
 * Port F ­ 1. bit: Kırmızı LED +
 * Port F ­ 2. bit: Mavi LED +
 * Port F ­ 3. bit: Yeşil LED +
+
+
 Bu Led ve butonları kullanabilmek için yönlerinin belirlenmesi gerekir. Yön seçimi işleminde butonlar giriş, LEDler çıkış olarak ayarlanır. + 
 *Çıkış* olarak ayarlamak için *1 biti* kullanılır. +
 *Giriş* olarak ayarlamak için *0 biti* kullanılır. +
