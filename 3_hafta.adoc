@@ -168,4 +168,5 @@ GPIO_PORTE_DATA_R &= ~(0x02); //  portE in 1.bitini çıkış yap  kırmızı le
 	 
 ---------------------------------------------------------------------	 
 
-
+image::Capture7.PNG[R]
+image::Capture8.PNG[R]
