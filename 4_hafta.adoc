@@ -1,0 +1,17 @@
+= Port B ile seven-segment kullanımı
+
+Stellaris launchpad üzerinde PORT B’ye bağlı 8 tane pin vardır. Şekil 1’deki yeşil nokta ile işaretlenmiş pinler PORT B’nin pinlerdir.+
+
+Ortak anot ve ortak katot olmak üzere 2 çeşit seven segment vardır. Bunların pin dizilimlerine ve seven segment hakkında detaylı bilgiye  aşağıdaki linkten ulaşabilirsiniz.
+http://320volt.com/7-segment-led-display-nedir-nasil-kullanilir/ +
+
+Ortak anot seven segment bağlantısı aşağıdaki gibi yapılmalıdır : +
+
+PB0 -> a +
+PB1 -> b +
+PB2 -> c +
+PB3 -> d +
+PB4 -> e + 
+PB5 -> f +
+PB6 -> g +
++3.3V -> Vcc +
