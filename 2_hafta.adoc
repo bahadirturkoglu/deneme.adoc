@@ -1,0 +1,23 @@
+= Kartın Üzerindeki LED ve Buttonlar
+
+
+Stellaris Launchpad üzerinde 2 button(reset butonu hariç) ve 3 led bulunur. Bu led ve butonlar  PORT F’ye bağlıdır. PORT F’deki yerleşimleri aşağıdaki gibidir:
+Şekil 1’de *2* ve *3* numara Stellaris kartının üzerindeki butonları, *Yeşil noktala*r  ise PORTF’nin pinlerini göstermektedir. +
+
+
+
+
+
+
+*Port F ­ 0. bit: SW2 (Sağdaki button)
+*Port F ­ 4. bit: SW1 (Soldaki button)
+*Port F ­ 1. bit: Kırmızı LED
+*Port F ­ 2. bit: Mavi LED
+*Port F ­ 3. bit: Yeşil LED
+Bu Led ve butonları kullanabilmek için yönlerinin belirlenmesi gerekir. Yön seçimi işleminde butonlar giriş, LEDler çıkış olarak ayarlanır. + 
+*Çıkış* olarak ayarlamak için *1 biti* kullanılır. +
+*Giriş* olarak ayarlamak için *0 biti* kullanılır. +
+Ayarlarda PortF yön registerına (GPIO_PORTF_DIR_R) bu değerleri aşağıdaki gibi yazılır. +
+*GPIO_PORTF_DIR_R = 0b01110;* // 0. Ve 4. Bit giriş, 1. 2. Ve 3. Bitler çıkış olarak ayarlandı +
+Porta veri yazma ve okuma işlemi PortF data register (GPIO_PORTF_DATA_R) üzerinden yapılır. 5 ayrı eleman aynı register üzerinde olduğu için, okunan değerin bit işlemlerine ayrılması gerekmektedir. 
+
