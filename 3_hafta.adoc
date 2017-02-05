@@ -113,7 +113,8 @@ int main() {
 ---------------------------------------------------------------------
 
 
-= PORTE’ye Dışardan Led Bağlama
+
+= PORTE’ye Dışardan Buton Bağlama
 
 [source,c]
 
