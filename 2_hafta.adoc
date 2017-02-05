@@ -6,9 +6,6 @@ Stellaris Launchpad üzerinde 2 button(reset butonu hariç) ve 3 led bulunur. Bu
 
 image::Capture4.PNG[R]
 
-
-
-
 * Port F ­ 0. bit: SW2 (Sağdaki button) +
 * Port F ­ 4. bit: SW1 (Soldaki button) +
 * Port F ­ 1. bit: Kırmızı LED +
@@ -23,3 +20,12 @@ Ayarlarda PortF yön registerına (GPIO_PORTF_DIR_R) bu değerleri aşağıdaki 
 *GPIO_PORTF_DIR_R = 0b01110;* // 0. Ve 4. Bit giriş, 1. 2. Ve 3. Bitler çıkış olarak ayarlandı +
 Porta veri yazma ve okuma işlemi PortF data register (GPIO_PORTF_DATA_R) üzerinden yapılır. 5 ayrı eleman aynı register üzerinde olduğu için, okunan değerin bit işlemlerine ayrılması gerekmektedir. 
 
+*Örnek:* PortF’nin 4. bitini okumak için aşağıdaki işlem yapılmalıdır. +
+*GPIO_PORTF_DATA_R & 0b10000* +
+Porttaki tüm bitleri oku ve 10000 ile AND yaparak sadece 4. biti al. +
+*Örnek:* PortF’nin 2. bitini 1 yapmak için aşağıdaki işlem yapılmalıdır.
+*GPIO_PORTF_DATA_R = GPIO_PORTF_DATA_R | 0b00100* +
+Porttaki tüm bitleri oku. 00100 ile OR’layıp 2. biti 1 yap. Geri ata. +
+*Örnek:* PortF’nin 1. bitini 0 yapmak için aşağıdaki işlem yapılmalıdır: +
+*GPIO_PORTF_DATA_R = GPIO_PORTF_DATA_R & ~(0b00010)* +
+Porttaki tüm bitleri oku ve 00010’in tersi ile AND’leyip sadece 1. biti 0 yap. Geri ata. +
