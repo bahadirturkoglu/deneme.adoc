@@ -1,0 +1,42 @@
+= Port D’nin dışarıdan led bağlanarak kullanılması
+
+PD0 ve PD1’e birer led bağlı. +
+
+[source,c]
+---------------------------------------------------------------------
+
+
+#include <stdint.h>
+#include "inc/tm4c123gh6pm.h"
+// stellaris #include "inc/lm4f120h5qr.h"
+
+void init_port_D() {
+	volatile unsigned long delay;
+	SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOD; // Port D’yi aktiflestir
+	delay = SYSCTL_RCGC2_R;  	// zaman gecirmek icin
+	GPIO_PORTD_DIR_R |= 0x0F;	// PD 3,2,1,0 pinlerini cikis yap
+	GPIO_PORTD_AFSEL_R &= ~0x0F; // PD 3,2,1,0 pinlerini alternatif fonksinunu 0 yap
+	GPIO_PORTD_DEN_R |= 0x0F;	// PD 3,2,1,0 pinlerini aktiflestir
+}
+
+int main() {
+	volatile unsigned long delay;
+
+	init_port_D();
+
+	while (1) {
+   	GPIO_PORTD_DATA_R |= 0b0010; // PD1’i 1 yap
+   	GPIO_PORTD_DATA_R &= ~0b0001; // PD0’i 0 yap
+
+   	for (delay = 0 ; delay < 400000 ; delay++)
+       		/* bos dongu */;
+
+   	GPIO_PORTD_DATA_R |= 0b0001; // PD0’i 1 yap
+   	GPIO_PORTD_DATA_R &= ~0b0010; // PD1’i 0 yap
+
+   	for (delay = 0 ; delay < 400000 ; delay++)
+       		/* bos dongu */;
+	}
+}
+
+---------------------------------------------------------------------
