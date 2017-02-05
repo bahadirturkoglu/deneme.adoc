@@ -40,3 +40,75 @@ int main() {
 }
 
 ---------------------------------------------------------------------
+
+= 3 Led ile Trafik Işığı
+
+PD0’e kırmızı, PD1’e sarı (şekilde mavi led), PD2’ye yeşil led bağlı. +
+
+
+
+[source,c]
+---------------------------------------------------------------------
+
+#include <stdint.h>
+#include "inc/tm4c123gh6pm.h"
+// stellaris #include "inc/lm4f120h5qr.h"
+
+void init_port_D() {
+	volatile unsigned long delay;
+	SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOD; // Port D’yi aktiflestir
+	delay = SYSCTL_RCGC2_R;  	// zaman gecirmek icin
+	GPIO_PORTD_DIR_R |= 0x0F;	// PD 3,2,1,0 pinlerini cikis yap
+	GPIO_PORTD_AFSEL_R &= ~0x0F; // PD 3,2,1,0 pinlerini alternatif fonksinunu 0 yap
+	GPIO_PORTD_DEN_R |= 0x0F;	// PD 3,2,1,0 pinlerini aktiflestir
+}
+
+#define BIT_SET(PORT, PIN) do { \
+	PORT |= 1<<PIN; \
+} while (0)
+
+#define BIT_RESET(PORT, PIN) do { \
+	PORT &= ~(1<<PIN); \
+} while (0)
+
+#define PORTD (GPIO_PORTD_DATA_R)
+
+int main() {
+	volatile unsigned long delay;
+
+	init_port_D();
+
+	while (1) {
+  	// KIRMIZI=1, SARI=0, YESIL=0
+  	BIT_SET(PORTD, 1);
+   	BIT_RESET(PORTD, 2);
+   	BIT_RESET(PORTD, 3);
+   	for (delay = 0 ; delay < 4000000 ; delay++)
+  		 /* bos dongu */;
+
+   	// KIRMIZI=1, SARI=1, YESIL=0
+  	BIT_SET(PORTD, 1);
+   	BIT_SET(PORTD, 2);
+   	BIT_RESET(PORTD, 3);
+  	for (delay = 0 ; delay < 4000000 ; delay++)
+  		 /* bos dongu */;
+
+  	// KIRMIZI=0, SARI=0, YESIL=1
+  	BIT_RESET(PORTD, 1);
+   	BIT_RESET(PORTD, 2);
+   	BIT_SET(PORTD, 3);
+  	for (delay = 0 ; delay < 4000000 ; delay++)
+  		 /* bos dongu */;
+
+  	// SARI
+  	BIT_RESET(PORTD, 1);
+   	BIT_SET(PORTD, 2);
+   	BIT_RESET(PORTD, 3);
+  	 for (delay = 0 ; delay < 4000000 ; delay++)
+  		 /* bos dongu */;
+
+	}
+}
+
+---------------------------------------------------------------------
+
