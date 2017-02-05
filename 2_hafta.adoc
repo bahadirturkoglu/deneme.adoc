@@ -37,7 +37,7 @@ http://users.ece.utexas.edu/~valvano/Volume1/E-Book/C6_MicrocontrollerPorts.htm#
 = LED yakip söndürme örneği
 Bu örnek çalıştırıldığında kırmızı led yanacak biraz bekledikten sonra sönecek, biraz bekledikten sonra da mavi led yanacak ve biraz  bekledikten sonra mavi led de sönecek ve biraz bekleyecek. Bu sonsuz döngü içinde tekrarlanacak. +
 
-[source,python]
+[source,c]
 ---------------------------------------------------------------------
 
 
@@ -96,9 +96,62 @@ int main(void) {
 
 ---------------------------------------------------------------------
 
+= Buttonu kullanarak LED yakma örneği
 
+Bu örnek çalıştırldığında soldaki butona basıldığında yeşil led yanacak, sağdaki butona basıldığında mavi led yanacak. +
 
+[source,c]
 
+---------------------------------------------------------------------
+
+#include <stdint.h>
+#include "inc/tm4c123gh6pm.h"
+
+/**Bu fonksiyon portf’ye erişip müdahale edebilmemiz için gerekli ayarları yapıyor.*/
+void init_port_F() {
+   volatile unsigned long tmp; // bu degisken gecikme yapmak icin gerekli
+   SYSCTL_RCGCGPIO_R |= 0x00000020;  // 1) activate clock for Port F
+   tmp = SYSCTL_RCGCGPIO_R;    	// allow time for clock to start
+   GPIO_PORTF_LOCK_R = 0x4C4F434B;   // 2) unlock GPIO Port F
+   GPIO_PORTF_CR_R = 0x1F;       	// allow changes to PF4-0
+   // only PF0 needs to be unlocked, other bits can't be locked
+   GPIO_PORTF_AMSEL_R = 0x00;    	// 3) disable analog on PF
+   GPIO_PORTF_PCTL_R = 0x00000000;   // 4) PCTL GPIO on PF4-0
+   GPIO_PORTF_DIR_R = 0x0E;      	// 5) PF4,PF0 in, PF3-1 out
+   GPIO_PORTF_AFSEL_R = 0x00;    	// 6) disable alt funct on PF7-0
+   GPIO_PORTF_PUR_R = 0x11;      	// enable pull-up on PF0 and PF4
+   GPIO_PORTF_DEN_R = 0x1F;      	// 7) enable digital I/O on PF4-0
+}
+int main(void) {
+   init_port_F(); // portf’yi ayarla
+   volatile unsigned long delay; // compiler optimizasyonunu engellemek icin volatile kullandik
+   int button_sag, button_sol;
+   while (1) {
+  	 // sagdaki button 0. bit, soldaki button 4. bit
+  	 // button basiliyken 0, basili degilken 1 değerini alır.
+  	
+ // sagdaki buttonun degerini oku, degiskene degerini ata
+  	 button_sag = GPIO_PORTF_DATA_R & 0b00001;
+  	
+ // soldaki buttonun degerini oku, degiskene degerini ata
+  	 button_sol = GPIO_PORTF_DATA_R & 0b10000;
+  	 
+if (button_sag == 0) {
+  		 // kirmizi ledi yak
+  		 GPIO_PORTF_DATA_R |= 0b00010; // 0x02
+  	 } else {
+  		 // button basili degilse, kirimzi ledi sondur
+  		 GPIO_PORTF_DATA_R &= ~(0b00010);
+  	 }
+  	 if (button_sol == 0) { // button basili ise yesil ledi yak
+  		 GPIO_PORTF_DATA_R |= 0x08; // 0b01000
+  	 } else { // button basili degilse mavi ledi sondur
+  		 GPIO_PORTF_DATA_R &= ~(0x08);
+  	 }
+   }
+}
+
+---------------------------------------------------------------------
 
 
 
