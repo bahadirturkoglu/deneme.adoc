@@ -23,7 +23,7 @@ image::Capture9.PNG[R]
 image::Capture10.PNG[R]
 
 image::Capture11.PNG[R]
-*Şekil 3*+
+*Şekil 3* +
 
 Şekil 3’te yukarıda belirtilen  bağlantıların yapılmış hali gösterilmektedir. Vcc hariç diğer pinlere birer direnç(330Ω) bağladıktan sonra  stellaris launchpad üzerindeki PORT B’ye bağlanmıştır. +
 Bağlantılar yapıldıktan sonra aşağıdaki kod parçası stellaris kartına yüklendiğinde seven segment üzerinde 0’dan 9’a kadar tüm rakamlar sırayla gösterilecekler. +
@@ -119,3 +119,14 @@ int main() {
 }
 
 ---------------------------------------------------------------------
+
+
+== Kaynaklar:
+
+Seven Segment Display : +
+http://320volt.com/7-segment-led-display-nedir-nasil-kullanilir/ +
+
+Seven Segment Display Simulator : +
+http://www.uize.com/examples/seven-segment-display.html/
+
+
