@@ -17,10 +17,10 @@ PB6 -> g +
 +3.3V -> Vcc +
 
 image::Capture9.PNG[R]
-*Şekil 1* ++
+*Şekil 1* +
 
 
-image::Capture10.PNG[R]++
+image::Capture10.PNG[R]
 
 image::Capture11.PNG[R]
 *Şekil 3*+
@@ -28,8 +28,7 @@ image::Capture11.PNG[R]
 Şekil 3’te yukarıda belirtilen  bağlantıların yapılmış hali gösterilmektedir. Vcc hariç diğer pinlere birer direnç(330Ω) bağladıktan sonra  stellaris launchpad üzerindeki PORT B’ye bağlanmıştır. +
 Bağlantılar yapıldıktan sonra aşağıdaki kod parçası stellaris kartına yüklendiğinde seven segment üzerinde 0’dan 9’a kadar tüm rakamlar sırayla gösterilecekler. +
 
-image::Capture11.PNG[R]
-*Şekil 3*
+
 
 [source,c]
 ---------------------------------------------------------------------
