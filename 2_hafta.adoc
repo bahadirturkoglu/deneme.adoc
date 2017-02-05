@@ -23,9 +23,14 @@ Porta veri yazma ve okuma işlemi PortF data register (GPIO_PORTF_DATA_R) üzeri
 *Örnek:* PortF’nin 4. bitini okumak için aşağıdaki işlem yapılmalıdır. +
 *GPIO_PORTF_DATA_R & 0b10000* +
 Porttaki tüm bitleri oku ve 10000 ile AND yaparak sadece 4. biti al. +
-*Örnek:* PortF’nin 2. bitini 1 yapmak için aşağıdaki işlem yapılmalıdır.
+*Örnek:* PortF’nin 2. bitini 1 yapmak için aşağıdaki işlem yapılmalıdır. +
 *GPIO_PORTF_DATA_R = GPIO_PORTF_DATA_R | 0b00100* +
 Porttaki tüm bitleri oku. 00100 ile OR’layıp 2. biti 1 yap. Geri ata. +
 *Örnek:* PortF’nin 1. bitini 0 yapmak için aşağıdaki işlem yapılmalıdır: +
 *GPIO_PORTF_DATA_R = GPIO_PORTF_DATA_R & ~(0b00010)* +
 Porttaki tüm bitleri oku ve 00010’in tersi ile AND’leyip sadece 1. biti 0 yap. Geri ata. +
+
+Portların ayarlarına ve kullanım biçimine aşağıdaki linkten bakabilirsiniz: +
+http://users.ece.utexas.edu/~valvano/Volume1/E-Book/C6_MicrocontrollerPorts.htm#6_3/ +
+ *“6.3. I/O Programming and the Direction Register”* başlığı altındaki *“Interactive Tool 6.1”* kısmından inceleyebilirsiniz. +
+
