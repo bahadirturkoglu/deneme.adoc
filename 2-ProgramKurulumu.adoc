@@ -14,7 +14,7 @@ Sistem Programlama için kullanılacak geliştirme programlarının kurulumu ve 
 
 VirtualBox ‘ın içine “xubuntu-kouembedded-v20160217.ova” isimli sanal makine kalıbı aktarıldıktan sonra masaüstünde KOU Paket Yükleyici isimli bir program görünecektir. 
 
-image::resim1.2.png[R]
+image::resim1.4.png[R]
 
 Masaüstündeki”Kou Paket Yükleyici”ye tıklayınız. +
 
