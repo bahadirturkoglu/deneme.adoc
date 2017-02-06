@@ -1,0 +1,17 @@
+= İçindekiler
+
+.  *USB Tanımama Problemi*
+.  *Sanal makinenin açılmama problemi veya "tsc: Fast TSC calibration failed" hatası*
+
+== 1. USB Tanımama Problemi
+
+
+Sanal makinenin USB’yi tanımaması durumunda *“Oracle VM VirtualBox Extension Pack”* paketinin kurulması gerekmektedir. + 
+
+Kurulumu ders notlarındaki *“1-Sanal Makine Kurulumu”* dokümanına göre yaptıysanız aşağıdaki linkten indirebilirsiniz:
+http://download.virtualbox.org/virtualbox/4.3.36/Oracle_VM_VirtualBox_Extension_Pack-4.3.36-105129.vbox-extpack/
+
+Eğer kurulumu farklı bir şekilde yaptıysanız www.virtualbox.org sayfasından kullanıdığınız virtualbox versiyonuna uygun *“Oracle VM VirtualBox Extension Pack”* paketini indiriniz. +
+
+İndirdiğiniz dosyayı çift tıklayarak kurulumu gerçekleştirebilirsiniz. +
+
