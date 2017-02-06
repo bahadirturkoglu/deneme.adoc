@@ -15,3 +15,6 @@ Eğer kurulumu farklı bir şekilde yaptıysanız www.virtualbox.org sayfasında
 
 İndirdiğiniz dosyayı çift tıklayarak kurulumu gerçekleştirebilirsiniz. +
 
+image::3Capture.PNG[R]
+
+
