@@ -1,3 +1,22 @@
+= Eş Zamanlı İşlem Problemi
+
+Aşağıdaki iki işlem aynı anda yapılmak istenilmektedir. +
+
+* seven segmente sayma işlemi yap +
+* Buttona basıldığında ledi yak, basılmadığında söndür +
+
+Aşağıdaki kodu çalıştırdıktan sonra buttona basılması ile ledin sönmesi arasındaki gecikmeyi test ediniz. +
+
+İşlemci zamanını harcayarak yapılan bekleme işlemine “meşgul bekleme” (busy waiting) denilmektedir. +
+
+Aşağıdaki örnekte meşgul bekleme durumu buttona basıldığında LED’in geç tepki vermesine, hatta bazı durumlarda algılanmamasına sebep olmaktadır. +
+
+
+
+[source,c]
+---------------------------------------------------------------------
+
+
 
 #include <stdint.h>
 #include "inc/tm4c123gh6pm.h"
@@ -77,3 +96,4 @@ int main() {
 	}
 }
 
+---------------------------------------------------------------------
