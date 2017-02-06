@@ -36,4 +36,92 @@ image::Capture14.PNG[R]
 = Seri porttan bilgisayara text gönderme ve okuma
 Seri portu şimdilik log atmak için kullanacağımız için fazla detaya girmiyoruz. Aşağıdaki kod ile bilgisayara yazı gönderebilirsiniz. +
 
+[source,c]
+---------------------------------------------------------------------
+
+#include <stdint.h>
+#include "inc/tm4c123gh6pm.h"
+// stellaris #include "inc/lm4f120h5qr.h"
+	
+#include <stdbool.h>
+#include "inc/hw_types.h"
+#include "driverlib/gpio.h"
+#include "driverlib/sysctl.h"
+#include "driverlib/uart.h"
+#include "utils/uartstdio.h"
+
+// secenekler: 300, 600, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200
+#define BAUDRATE 600
+
+/** UART (seri port) ayarini yapan fonksiyon */
+void init_UARTstdio() {
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
+	GPIOPinConfigure(0x00000001);
+	GPIOPinConfigure(0x00000401);
+	GPIOPinTypeUART(0x40004000, 0x00000001 | 0x00000002);
+	UARTConfigSetExpClk(0x40004000, SysCtlClockGet(), BAUDRATE,
+                        	(UART_CONFIG_WLEN_8 | UART_CONFIG_STOP_ONE |
+                         	UART_CONFIG_PAR_NONE));
+	UARTStdioConfig(0, BAUDRATE, SysCtlClockGet());
+}
+
+int main(void) {
+	int i;
+
+	init_UARTstdio();
+
+	for (i = 0 ; ; i++) {
+   	 UARTprintf("test: %d\n", i);
+	}
+}
+
+---------------------------------------------------------------------
+
+*“Undefined reference to ...”* hatasının alınması =
+*“ÖNEMLİ: Proje Dosyası Güncellemesi”* veya *“ÖNEMLİ: Proje Ayarları Güncellemesi”* başlığındaki işlemlerde hata yapılmış olabilir. +
+
+== Sanal makineden seri porta erişmek için aşağıdaki işlemleri yapabilirsiniz:
+
+Önceki başlıktaki kodları derleyip, kartta çalıştırınız. +
+
+*“Serial port terminal”* programını açınız +
+
+image::Capture15.PNG[R]
+
+Configuration menüsünden Port seçeneğini açınız +
+
+image::Capture16.PNG[R]
+
+
+Ayarları aşağıdaki gibi yapınız. +
+
+*UYARI:* Baud Rate kısmına kodun içindeki *“#define BAUDRATE 600”* satırındaki değeri (600) girin. + 
+
+image::Capture17.PNG[R]
+
+
+Port kısmında seçeneklerde /dev/ttyACM1 gibi görünebilir. /dev/ttyACM ile başlayan portu seçin. +
+
+Karttaki program çalışır durumdaysa Serial port terminal ekranında +
+
+deneme: 12345 +
+deneme: 12346 +
+...
+gibi satırlar göreceksiniz. +
+
+
+Eğer ekranda tuhaf yazılar görüyorsanız, birkaç kere programı duraklatıp, devam ettirmeyi deneyiniz +
+
+image::Capture18.PNG[R]
+
+image::Capture19.PNG[R]
+
+
+
+Tuhaf yazılar duraklatmayla çözülmüyorsa, Serial port terminali durdurup, tekrar çalıştırınız. Çalıştırıken Baud Rate değerinin koddaki ile aynı olduğunu kontrol ediniz.
+
+
+
+
+
 
