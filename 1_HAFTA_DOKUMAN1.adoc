@@ -64,3 +64,4 @@ xubuntu-kouembedded-v20160217.ova 496751616 byte
 
 VirtualBox programını açıyoruz +
 
+
