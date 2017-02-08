@@ -1,7 +1,6 @@
 = 1-) Sanal Makine Kurulumu
 .. İçindekiler
 . Sanal Makine Kurulumu
-.. İçindekiler
 .. Giriş
 ... Sanal Makine Programı
 .... VirtualBox Sanal Makinesinin Kurulumu
