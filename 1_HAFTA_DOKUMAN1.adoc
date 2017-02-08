@@ -38,7 +38,7 @@ http://download.virtualbox.org/virtualbox/4.3.36/Oracle_VM_VirtualBox_Extension_
 
 === 1.2.2. Sanal Makine Dosyası
 
-Bilgisayar üzerinde sanal makine çalıştırmak için gerekli olan ikinci adım ise VirtualBox sanal makine programı içinde çalışacak “ova” uzantılı sanal makina kalıbının eklenmesidir. +
+Bilgisayar üzerinde sanal makine çalıştırmak için gerekli olan ikinci adım ise VirtualBox sanal makine programı içinde çalışacak *“ova”* uzantılı sanal makina kalıbının eklenmesidir. +
 
 2017 Bahar yarıyılı Sistem programlama dersi için kullanılacak sanal makine kalıbını ismi *“xubuntu-kouembedded-v20160217.ova”* dır. Bu sanal makine kalıbı gömülü sistem lab. tarfından sistem programlama dersi için hazırlanmış olup hiçbir lisans kısıtlaması mevcut değildir. Dolayısıyla kalıp istenildiği takdirde internet üzerinden paylaşılabilir. +
 
