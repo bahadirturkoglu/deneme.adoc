@@ -6,6 +6,9 @@ Açılan menüden C/C++ Build -> Settings menüsünü açınız. Aşağıdaki ş
 *“Other objects”* kısmındaki ekleme buttonuna tıklayınız. +
 
 image::1Capture.PNG[R]
+
+Açılan pencereden “Workspace” buttonuna tıklayıp, aşağıdaki resimdeki gibi açık olan projeniz altından “...driverlib/gcc/libdriver.a” dosyasını bulup ekleyiniz +
+
 image::2Capture.PNG[R]
 
 
