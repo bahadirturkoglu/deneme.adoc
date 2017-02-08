@@ -1,4 +1,4 @@
-. Sanal Makine Kurulumu
+= 1-) Sanal Makine Kurulumu
 .. İçindekiler
 . Sanal Makine Kurulumu
 .. İçindekiler
