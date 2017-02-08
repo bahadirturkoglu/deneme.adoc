@@ -1,0 +1,11 @@
+. Sanal Makine Kurulumu
+.. İçindekiler
+. Sanal Makine Kurulumu
+.. İçindekiler
+.. Giriş
+... Sanal Makine Programı
+.... VirtualBox Sanal Makinesinin Kurulumu
+... Sanal Makine Dosyası
+.. Güvenlik Notları
+.. İlk Çalıştırma
+.. Sanal Makinenin Kullanımı
