@@ -1,17 +1,17 @@
 = Sistem programlama dersine yönelik proje oluşturma, derleme, programı karta aktarma ve hata ayıklama +
 
-* *İçindekiler* 
-. Sistem programlama dersine yönelik proje oluşturma, derleme, programı karta aktarma ve hata ayıklama
-. İçindekiler
-.. Gerekli Dosyalar
-.. Proje açma
-... Eclipse geliştirme ortamında proje oluşturma
-... Dosyaların projeye kopyalanması
-... Proje ayarları
-.. Projeyi derleme
-.. “Debugger”ın ayarlanması
-.. Kartın sanal makineye aktarılması
-.. Debug işlemi
+. İçindekiler 
+.. Sistem programlama dersine yönelik proje oluşturma, derleme, programı karta aktarma ve hata ayıklama
+.. İçindekiler
+... Gerekli Dosyalar
+... Proje açma
+.... Eclipse geliştirme ortamında proje oluşturma
+.... Dosyaların projeye kopyalanması
+.... Proje ayarları
+... Projeyi derleme
+... “Debugger”ın ayarlanması
+... Kartın sanal makineye aktarılması
+... Debug işlemi
 
 * *Gerekli Dosyalar*
 ** Stellaris Launchpad kullananlar için: Stellaris_Launchpad.tar.gz +
