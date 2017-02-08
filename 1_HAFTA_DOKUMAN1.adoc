@@ -52,7 +52,7 @@ Derse ait *“xubuntu-kouembedded-v20160217.ova”* isimli sanal makine program�
 
 * Sanal makinede resmi olarak desteklenmeyen, değiştirilmiş bir GNU/Linux dağıtımı bulunmaktadır. İşletim sisteminde laboratuvar tarafından ders için değişiklik yapılmıştır ve gerektiğinde ders ile ilgili güncelleme verilecektir. +
 
-* Sanal makineye tarafımızca güvenlik garantisi verilmemektedir. Ders amacı dışında kullanmanız tavsiye edilmez. Sanal makine içindeki yazılımlara kişisel bilgi ve parola (mail vb.) girmeyiniz.+
+* Sanal makineye tarafımızca güvenlik garantisi verilmemektedir. Ders amacı dışında kullanmanız tavsiye edilmez. Sanal makine içindeki yazılımlara kişisel bilgi ve parola (mail vb.) girmeyiniz. +
 
 * Güvenmediğiniz bir kaynaktan aldığınız sanal makine dosyasını sha1sum kontrolünü yaparak kullanmanız tavsiye edilir. +
 
@@ -60,5 +60,7 @@ Derse ait *“xubuntu-kouembedded-v20160217.ova”* isimli sanal makine program�
 xubuntu-kouembedded-v20160217.ova 496751616 byte
 
 
+== 1.4. İlk Çalıştırma
 
+VirtualBox programını açıyoruz +
 
