@@ -44,7 +44,7 @@ image::resim1.3.png[R]
 
 Bir değişiklik yapmadan “Next”e basınız. +
 
-image::resim1.4.png[R]
+image::resim1.4.YENİ.png[R]
 
 “Finish”e basınız. +
 
