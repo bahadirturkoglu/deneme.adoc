@@ -48,3 +48,17 @@ Derse ait *“xubuntu-kouembedded-v20160217.ova”* isimli sanal makine program�
 
 * https://github.com/KOU-Embedded-System-Lab/os-base-image/releases/
 
+== 1.3. Güvenlik Notları
+
+* Sanal makinede resmi olarak desteklenmeyen, değiştirilmiş bir GNU/Linux dağıtımı bulunmaktadır. İşletim sisteminde laboratuvar tarafından ders için değişiklik yapılmıştır ve gerektiğinde ders ile ilgili güncelleme verilecektir. +
+
+* Sanal makineye tarafımızca güvenlik garantisi verilmemektedir. Ders amacı dışında kullanmanız tavsiye edilmez. Sanal makine içindeki yazılımlara kişisel bilgi ve parola (mail vb.) girmeyiniz.+
+
+* Güvenmediğiniz bir kaynaktan aldığınız sanal makine dosyasını sha1sum kontrolünü yaparak kullanmanız tavsiye edilir. +
+
+*sha1sum:* 6c89fb4c637c1c965331b52dcdac922f9a32c0eb
+xubuntu-kouembedded-v20160217.ova 496751616 byte
+
+
+
+
