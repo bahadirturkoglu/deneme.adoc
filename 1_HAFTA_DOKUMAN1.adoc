@@ -26,7 +26,7 @@ Sanal Makine programları gerçek bir bilgisayar gibi çalışan yazılımdır. 
 
 Sistem programlama dersi için hazırlanan geliştirme ortamı VirtualBox isimli bir sanal makine programı üzerinde çalışacaktır. VirtualBox sanal makine programı aşağıdaki linklerden indirilip kurulabilir. +
 
-* Windows: http://download.virtualbox.org/virtualbox/4.3.40/VirtualBox-4.3.40-110317-Win.exe/
+* Windows: http://download.virtualbox.org/virtualbox/4.3.40/VirtualBox-4.3.40-110317-Win.exe
 
 * GNU/Linux: Yazılım merkezi kullanılarak indirilebilir. +
 
