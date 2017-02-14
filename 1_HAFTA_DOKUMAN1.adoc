@@ -30,11 +30,11 @@ Sistem programlama dersi için hazırlanan geliştirme ortamı VirtualBox isimli
 
 * GNU/Linux: Yazılım merkezi kullanılarak indirilebilir. +
 
-* OS X: http://download.virtualbox.org/virtualbox/4.3.36/VirtualBox-4.3.36-105129-OSX.dmg/
+* OS X:http://download.virtualbox.org/virtualbox/4.3.40/VirtualBox-4.3.40-110317-OSX.dmg
 
 VirtualBox kurulumu tamamlandıktan sonra programa ait birkaç özelliğin aktif hale gelmesi için aşağıdaki linkteki ek paketinde indirilip kurulması gerekmektedir. +
 
-http://download.virtualbox.org/virtualbox/4.3.36/Oracle_VM_VirtualBox_Extension_Pack-4.3.36-105129.vbox-extpack/
+http:http://download.virtualbox.org/virtualbox/4.3.40/Oracle_VM_VirtualBox_Extension_Pack-4.3.40-110317a.vbox-extpack
 
 === 1.2.2. Sanal Makine Dosyası
 
@@ -44,9 +44,9 @@ Bilgisayar üzerinde sanal makine çalıştırmak için gerekli olan ikinci adı
 
 Derse ait *“xubuntu-kouembedded-v20160217.ova”* isimli sanal makine programına aşağıdaki linklerden erişebilirsiniz. +
 
-* https://github.com/KOU-Embedded-System-Lab/os-base-image/releases/download/v20160217/xubuntu-kouembedded-v20160217.ova/
+* https://github.com/KOU-Embedded-System-Lab/os-base-image/releases/download/v20160217/xubuntu-kouembedded-v20160217.ova
 
-* https://github.com/KOU-Embedded-System-Lab/os-base-image/releases/
+* https://github.com/KOU-Embedded-System-Lab/os-base-image/releases
 
 == 1.3. Güvenlik Notları
 
