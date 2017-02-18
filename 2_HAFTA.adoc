@@ -109,6 +109,8 @@ Bu örnek çalıştırldığında soldaki butona basıldığında yeşil led yan
 #include <stdint.h>
 #include "inc/tm4c123gh6pm.h"
 
+// stellaris #include "inc/lm4f120h5qr.h"
+
 /**Bu fonksiyon portf’ye erişip müdahale edebilmemiz için gerekli ayarları yapıyor.*/
 void init_port_F() {
    volatile unsigned long tmp; // bu degisken gecikme yapmak icin gerekli
