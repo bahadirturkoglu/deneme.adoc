@@ -41,6 +41,8 @@ int main() {
 
 ---------------------------------------------------------------------
 
+image::d3Capture.PNG[R]
+
 = 3 Led ile Trafik Işığı
 
 PD0’e kırmızı, PD1’e sarı (şekilde mavi led), PD2’ye yeşil led bağlı. +
@@ -112,6 +114,8 @@ int main() {
 
 ---------------------------------------------------------------------
 
+image::d4Capture.PNG[R]
+
 image::Capture5.PNG[R]
 image::Capture6.PNG[R]
 
@@ -170,3 +174,5 @@ GPIO_PORTE_DATA_R &= ~(0x02); //  portE in 1.bitini çıkış yap  kırmızı le
 
 image::Capture7.PNG[R]
 image::Capture8.PNG[R]
+
+image::d5Capture.PNG[R]
