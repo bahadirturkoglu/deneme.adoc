@@ -102,7 +102,7 @@ image::d2Capture.PNG[R]
 
 = Buttonu kullanarak LED yakma örneği
 
-Bu örnek çalıştırldığında soldaki butona basıldığında yeşil led yanacak, sağdaki butona basıldığında mavi led yanacak. +
+Bu örnek çalıştırldığında soldaki butona basıldığında yeşil led yanacak, sağdaki butona basıldığında kırmızı led yanacak. +
 
 [source,c]
 
@@ -151,7 +151,7 @@ if (button_sag == 0) {
   	 }
   	 if (button_sol == 0) { // button basili ise yesil ledi yak
   		 GPIO_PORTF_DATA_R |= 0x08; // 0b01000
-  	 } else { // button basili degilse mavi ledi sondur
+  	 } else { // button basili degilse yeşil ledi sondur
   		 GPIO_PORTF_DATA_R &= ~(0x08);
   	 }
    }
