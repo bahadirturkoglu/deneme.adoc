@@ -98,7 +98,7 @@ int main(void) {
 
 ---------------------------------------------------------------------
 
-image::d1Capture.PNG[R]
+image::d2Capture.PNG[R]
 
 = Buttonu kullanarak LED yakma örneği
 
@@ -159,7 +159,7 @@ if (button_sag == 0) {
 
 ---------------------------------------------------------------------
 
-image::d2Capture.PNG[R]
+image::d1Capture.PNG[R]
 
 
 
