@@ -98,6 +98,8 @@ int main(void) {
 
 ---------------------------------------------------------------------
 
+image::d1Capture.PNG[R]
+
 = Buttonu kullanarak LED yakma örneği
 
 Bu örnek çalıştırldığında soldaki butona basıldığında yeşil led yanacak, sağdaki butona basıldığında mavi led yanacak. +
@@ -157,7 +159,7 @@ if (button_sag == 0) {
 
 ---------------------------------------------------------------------
 
-
+image::d2Capture.PNG[R]
 
 
 
