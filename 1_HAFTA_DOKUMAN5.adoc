@@ -17,20 +17,20 @@ Eğer kurulumu farklı bir şekilde yaptıysanız www.virtualbox.org sayfasında
 
 İndirdiğiniz dosyayı çift tıklayarak kurulumu gerçekleştirebilirsiniz. +
 
-image::3Capture.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/3Capture.PNG[R]
 
 
 == 2. “Debugger”ın çalışmaması
 
-image::Captureg2.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Captureg2.PNG[R]
 
 1-) Kartın sanal makineye aktarıldığını kontrol edin
 
-image::Captureg3.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Captureg3.PNG[R]
 
 2-) Debug ayarlarında “Config options” ayarını kontrol edin.
 
-image::Captureg4.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Captureg4.PNG[R]
 
 *UYARI:* Google Drive’dan kopyalama sırasında görünmeyen karakter gelebilir. Config options ayarındaki yazıyı şu linkten txt dosyasını indirip kopyalayabilirsiniz: +
 https://drive.google.com/file/d/0Bw8VB6WrbOkiVWtUb3BSTGhaM28/view?usp=sharing/
@@ -42,22 +42,22 @@ Bu hatanın birden fazla sebebi olabilir. Seçenekleri çözüme ulaşana kadar 
 1-) İşlemcinizin sanallaştırma (virtualization) özelliğini aktifleştirin. +
 BIOS’tan aşağıdaki gibi bir ayarı etkinleştirmelisiniz. Bu ayar BIOS’unuzun modeline göre farklı bir isimle olabilir. +
 
-image::Captureg5.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Captureg5.PNG[R]
 
 2-) Bilgisayarınızda başka sanal makine kurulu ise (VMware, Hyper-V), VirtualBox kullanırken diğerini devre dışı bırakmalısınız. İki sanal makine programı aynı anda çalışamaz. +
 
 
 3-) İşlemcinizde sanallaştırma desteği yoksa (Atom / Celeron işlemcilerin bazılarında) +
 
-image::Captureg6.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Captureg6.PNG[R]
 
 *"General"* kısmındaki yazıyı tıklayın. +
 
-image::Captureg7.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Captureg7.PNG[R]
 
 *"System"* altından "Motherboard" kısmında "Enable I/O APIC" özelliğini kapatın +
 
-image::Captureg8.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Captureg8.PNG[R]
 
 Processor kısmından çekirdek sayısını 1 yapın. +
 
