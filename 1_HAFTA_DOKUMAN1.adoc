@@ -86,7 +86,7 @@ image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Capturef4.PNG[R
 
 Virtualbox programını açtığınızda aşağıdaki pencere gelecektir.
 
-image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Capturef5.PNG[R]
+image::Capturef5.PNG[R]
 
 *“Başlat”* buttonu ile makineyi başlatın. Makine açıldığında aşağıdaki pencere gelecektir. +
 
