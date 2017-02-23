@@ -13,56 +13,56 @@ Sistem Programlama için kullanılacak geliştirme programlarının kurulumu ve 
 
 VirtualBox ‘ın içine “xubuntu-kouembedded-v20160217.ova” isimli sanal makine kalıbı aktarıldıktan sonra masaüstünde KOU Paket Yükleyici isimli bir program görünecektir. 
 
-image::resim1.4.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.4.png[R]
 
 Masaüstündeki”Kou Paket Yükleyici”ye tıklayınız. +
 
 
 ”Sistem Programlama Programları”nı seçiniz ve “Kaydet”e tıklıyanız. +
 
-image::resim1.2.2.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.2.2.png[R]
 
 “Yes”e tıklayınız.
 
-image::resim1.2.3.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.2.3.png[R]
 
 password = 1 tane boşluk karakteri (space) +
 
-image::resim1.2.5.png.jpg[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.2.5.png.jpg[R]
 
 İşlemin tamamlanmasını bekleyiniz. İşlem biraz uzun sürebilir. +
 
-image::resim1.2.6.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.2.6.png[R]
 
-image::resim1.2.7.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.2.7.png[R]
 
 İşlem tamamlandı pencereyi kapatınız. +
 
 “Başlat” menüsünden “Development” menüsü altındaki  “KOU Eclipse” tıklayınız. +
 
-image::resim1.2.8.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.2.8.png[R]
 
 “password” = 1 tane boşluk karakteri (space)
 
-image::resim1.2.9.png.jpg[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.2.9.png.jpg[R]
 
 İşlemin tamamlanmasını bekleyiniz. İşlem biraz uzun sürebilir.
 
-image::resim1.2.10.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.2.10.png[R]
 
-image::resim1.2.11.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.2.11.png[R]
 
 Kurulum bittikten sonra “Başlat” menüsünden “Development” menüsü altındaki  “KOU Eclipse” tıklayınız. +
 
-image::resim1.2.12.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.2.12.png[R]
 
 Herhangi bir seçim yapmadan “OK”e basınız. +
 
-image::resim1.2.13.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.2.13.png[R]
 
 Programımız kullanıma hazır hale gelmiştir. +
 
-image::resim1.2.14.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.2.14.png[R]
 
   
 
