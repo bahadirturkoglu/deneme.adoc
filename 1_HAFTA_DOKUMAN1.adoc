@@ -68,17 +68,17 @@ image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Capturef1.PNG[R
 
 Dosya menüsünden *“Cihazı içe aktar”* seçeneğini tıklayın. +
 
-image::Capturef2.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Capturef2.PNG[R]
 
 Kırmızı ile işaretli seçeneğini tıklayıp sanal makine dosyasını (xubuntu-kouembedded-v20160217.ova) seçiniz.
 Ardından *“ileri”* ye basınız. +
 
-image::Capturef3.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Capturef3.PNG[R]
 
 Makinenizin özeliklerine göre sanal makineye paylaşacağınız CPU (çekirdek) sayısı ve RAM miktarını değiştirebilirsiniz.
 Ardından *“İçe aktar”* a tıklayınız. +
 
-image::Capturef4.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Capturef4.PNG[R]
 
 İşlemin tamamlanmasını bekleyin. İşlem biraz uzun sürebilir. +
 
@@ -86,7 +86,7 @@ image::Capturef4.PNG[R]
 
 Virtualbox programını açtığınızda aşağıdaki pencere gelecektir.
 
-image::Capturef5.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Capturef5.PNG[R]
 
 *“Başlat”* buttonu ile makineyi başlatın. Makine açıldığında aşağıdaki pencere gelecektir. +
 
@@ -94,7 +94,7 @@ image::Capturef5.PNG[R]
 
 *Not:* 5 dakika geçtikten sonra siyah ekranda kalma durumunda veya açılma sırasında bir hata mesajı ile karşılaşılması durumunda “Kurulum Problemleri” dokümanını inceleyiniz. +
 
-image::Capturef6.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Capturef6.PNG[R]
 
 kullanıcı adı = *user* ve parola = *1 tane boşluk karakteri (space)*
 
