@@ -28,117 +28,117 @@ Eclipse geliştirme ortamında kartımız için proje oluşturma anlatılmışt�
 
 “KOU Eclipse”i açınız.
 
-image::resim.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim.png[R]
 
 File menüsünden “New” -> “*Project*” seçeneğini tıklayınız. +
 
-image::resim1.1.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.1.png[R]
 
 C/C++ altından C Project seçeneğini seçiniz +
 
-image::resim1.2.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.2.png[R]
 
 Proje ismi giriniz. Ardınan proje seçeneklerini aşağıdaki resimdeki ile aynı şekilde seçip Next’e basınız. +
 
-image::resim1.3.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.3.png[R]
 
 Bir değişiklik yapmadan “Next”e basınız. +
 
-image::resim1.4.YENİ.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.4.YENİ.png[R]
 
 “Finish”e basınız. +
 
-image::resim1.5.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.5.png[R]
 
 Proje geliştirme ortamına geçmeniz için işaretlenmiş alana tıklayınız. +
 
-image::resim1.6.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.6.png[R]
 
 === 1.3.2. Dosyaların projeye kopyalanması
 
 Ana makineden sanal makineye sürükle-bırak özelliğini aktifleştirmek için “Aygıtlar” bölümünden resimde gösterilen adımları uygulayınız. +
 
-image::resim1.7.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.7.png[R]
 
 İndirilmiş olan kütüphane arşivini aktarmak için ana makineden sanal makinenin masaüstündeki herhangi boş bir alana sürükleyiniz. +
 
-image::resim1.8.jpg[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.8.jpg[R]
 
 *Uyarı*: Stellaris kartını kullanıyorsanız “Stellaris_Launchpad.tar.gz”, Tiva C kartını kullanıyorsanız “Tiva_C_Launchpad.tar.gz” isimli dosyayı kullanmalısınız +
 
 
 Ana makineden sanal makineye atılan arşivdeki dosyaları resimdeki gibi çıkartınız. +
 
-image::resim1.9.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.9.png[R]
 
 Arşivden çıkartılmış olan klasörü açınız ve içindeki 2 klasörü daha önceden oluşturduğumuz projenin üstüne sürükleyip bırakınız. (Veya sağ tıklayıp kopyalayıp, Eclipse içinde proje ismine sağ tıklayıp yapıştıra basınız) +
 
-image::resim1.10.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.10.png[R]
 
 Karşınıza çıkan kopyalama penceresinde “*OK*” butonuna basınız. +
 
-image::resim1.11.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.11.png[R]
 
 === 1.3.3. Proje ayarları
 
 Proje isminde sağa tıklayarak açılan bölümde “Properties”e tıklayınız. +
 
-image::resim1.12.jpg[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.12.jpg[R]
 
 Açılan pencerede gerekli düzenlemeleri yapınız. +
 
 *DİKKAT: Düzenlemeler bitene kadar “OK” butonuna basmayınız.*
 
-image::resim1.13.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.13.png[R]
 
 
 “*Cross ARM C*” compiler altından “*Includes*”i açınız +
 
 
-image::resim1.14.png[R]
-image::resim1.15.png[R]
-image::resim1.16.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.14.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.15.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.16.png[R]
 
 *Uyarı*: Eğer Tiva C kartını kullanıyorsanız klasörün ismi “*SW-TM4C-2.1.2.111*” şeklinde görünecektir. +
 
-image::resim1.17.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.17.png[R]
 
 “*Cross Arm C Linker*” altından “General”i ve kırmızı ile açınız. +
 
-image::resim1.18.png[R]
-image::resim1.19.png[R]
-image::resim1.20.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.18.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.19.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.20.png[R]
 
 
 *Uyarı*:  Tiva C kartını kullanıyorsanız dosyanın ismi TM4C.ld şeklinde görünecektir. +
 
-image::resim1.21.png[R]
-image::resim1.22.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.21.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.22.png[R]
 
 == 1.4. Projeyi derleme
 
 Projeyi seçiniz ve “*Build*” ikonuna tıklayınız. (Veya projeyi sağ tıklayıp “Build Project”e tıklayınız) +
 
-image::resim1.23.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.23.png[R]
 
 Proje derlendikten sonra “*Binaries*”in altında projeye ait çalıştırılabilir dosya oluşacaktır. +
 
-image::resim1.24.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.24.png[R]
 
 == 1.5. “Debugger”ın ayarlanması 
 
 Debug ikonunun yanındaki aşağı oka tıklayıp “*Debug Configurations*”u açınız. + 
 (Veya proje ismine sağ tıklayıp “Debug As” menüsü altından “Debug Configurations”a tıklayınız) +
 
-image::resim1.25.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.25.png[R]
 
 Soldaki menüden “*GDB OpenOCD Debugging*” seçeneğini çift tıklayınız. +
 
-image::resim1.26.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.26.png[R]
 
 Debugger menüsünü açınız.
 
-image::resim1.27.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.27.png[R]
 
 “*Config options*” alanına yazacağınız ifadeyi şu linkten kopyalayabilirsiniz: +
 
@@ -150,7 +150,7 @@ Ardından “*Apply*” buttonuna bastıktan sonra pencereyi kapatınız. +
 
 Öncelikle geliştirme kartını USB bağlantısı ile bilgisayarınıza bağlayınız. +
 
-image::resim1.28.jpg[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.28.jpg[R]
 
 
 USB  kablosunu  şekilde sarı renkle işaretlenmiş  “*USB  ICDI*”  yazan  kısma  bağlayınız. +
@@ -161,7 +161,7 @@ USB  kablosunu  şekilde sarı renkle işaretlenmiş  “*USB  ICDI*”  yazan  
 
 Ardınan USB bağlantısını aşağıdaki gibi sanal makineye aktarınız. +
 
-image::resim1.29.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.29.png[R]
 
 Sanal  makine  penceresinin  altından  USB  simgesine  sağ  tıklayıp,  “*Texas  Instruments In­Circuit ...*” aygıtını seçili yapın. +
 
@@ -171,23 +171,23 @@ Sanal  makine  penceresinin  altından  USB  simgesine  sağ  tıklayıp,  “*T
  
 Aşağıdaki gibi  kırmızı ile işaretli olan  debug seçeneğini çalıştırın. +
 
-image::resim1.30.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.30.png[R]
 
 Eğer  debug  menüsünde  görünmüyorsa “*1.4. Debugger”ın ayarlanması*” başlığındaki gibi  “*Debug Configurations*”u açıp, proje ile ilgili olan seçeneği seçip Debug buttonuna basınız.
 
-image::resim1.31.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.31.png[R]
 
 Bu adımdan sonra kart üzerinde ledin yanıp söndüğünü göreceksiniz. +
 
 “*Debug*” ın durdurulması
  
-image::resim1.32.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.32.png[R]
 
 Açık unutulmuş “*Debug*”ların durdurulması +
 
 Programın  tekrar  çalıştırılması  için,  önceki  çalışmadan  kalan  debuggerın  durdurulması  gerekmektedir.  Program  durdurulmadan  başka bir program debug edilmeye çalışıldığında aşağıdaki hata mesajı ile karşılaşılabilir. +
 
-image::resim1.33.png[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.33.png[R]
 
 Bu durumda açık kalmış debuggerın durdurulması gerekmektedir. +
 
