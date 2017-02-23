@@ -64,7 +64,7 @@ xubuntu-kouembedded-v20160217.ova 496751616 byte
 
 VirtualBox programını açıyoruz +
 
-image::Capturef1.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/Capturef1.PNG[R]
 
 Dosya menüsünden *“Cihazı içe aktar”* seçeneğini tıklayın. +
 
