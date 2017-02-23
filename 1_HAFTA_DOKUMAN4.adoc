@@ -5,10 +5,10 @@ Proje isminde sağa tıklayarak açılan bölümde *“Properties”* e tıklay�
 Açılan menüden C/C++ Build -> Settings menüsünü açınız. Aşağıdaki şekildeki gibi *“Cross ARM C Linker”*  altından *“Miscellaneous”*’u açınız. +
 *“Other objects”* kısmındaki ekleme buttonuna tıklayınız. +
 
-image::1Capture.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/1Capture.PNG[R]
 
 Açılan pencereden “Workspace” buttonuna tıklayıp, aşağıdaki resimdeki gibi açık olan projeniz altından “...driverlib/gcc/libdriver.a” dosyasını bulup ekleyiniz +
 
-image::2Capture.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/2Capture.PNG[R]
 
 
