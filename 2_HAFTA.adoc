@@ -47,7 +47,9 @@ Bu örnek çalıştırıldığında kırmızı led yanacak biraz bekledikten son
 // stellaris #include "inc/lm4f120h5qr.h"
 
 /**Bu fonksiyon portf’ye erişip müdahale edebilmemiz için gerekli ayarları yapıyor.*/
-void init_port_F() {
+void init_port_F() {  
+   volatile unsigned long tmp; // bu degisken gecikme yapmak icin gerekli
+   tmp = SYSCTL_RCGCGPIO_R;    	// allow time for clock to start
    SYSCTL_RCGCGPIO_R |= 0x00000020;  // 1) activate clock for Port F
    GPIO_PORTF_DIR_R = 0x0E;      	// 5) PF4,PF0 in, PF3-1 out
    GPIO_PORTF_DEN_R = 0x1F;      	// 7) enable digital I/O on PF4-0
@@ -106,7 +108,8 @@ Bu örnek çalıştırldığında soldaki butona basıldığında mavi led yanac
 
 /**Bu fonksiyon portf’ye erişip müdahale edebilmemiz için gerekli ayarları yapıyor.*/
 void init_port_F() {
-
+   volatile unsigned long tmp; // bu degisken gecikme yapmak icin gerekli
+   tmp = SYSCTL_RCGCGPIO_R;    	// allow time for clock to start
    SYSCTL_RCGCGPIO_R |= 0x00000020;  // 1) activate clock for Port F
    GPIO_PORTF_LOCK_R = 0x4C4F434B;   // 2) unlock GPIO Port F
    GPIO_PORTF_CR_R = 0x01;       	// allow changes to PF-0
