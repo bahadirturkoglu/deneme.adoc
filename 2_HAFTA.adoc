@@ -48,9 +48,7 @@ Bu örnek çalıştırıldığında kırmızı led yanacak biraz bekledikten son
 
 /**Bu fonksiyon portf’ye erişip müdahale edebilmemiz için gerekli ayarları yapıyor.*/
 void init_port_F() {
-   volatile unsigned long tmp; // bu degisken gecikme yapmak icin gerekli
    SYSCTL_RCGCGPIO_R |= 0x00000020;  // 1) activate clock for Port F
-   tmp = SYSCTL_RCGCGPIO_R;    	// allow time for clock to startF
    GPIO_PORTF_DIR_R = 0x0E;      	// 5) PF4,PF0 in, PF3-1 out
    GPIO_PORTF_DEN_R = 0x1F;      	// 7) enable digital I/O on PF4-0
 }
