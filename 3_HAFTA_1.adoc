@@ -170,7 +170,7 @@ int main(void) {
   	 button_sol = GPIO_PORTF_DATA_R & 0b10000;
   if(button_sol == 0 && button_sag == 0)
   	  {
-  		  GPIO_PORTD_DATA_R |= 0b01110; PD(1,2,3)’ü 1 yap
+  		  GPIO_PORTD_DATA_R |= 0b01110; // PD(1,2,3)’ü 1 yap
   	  }
   else if (button_sag == 0) { // buton basılı ise
   		
@@ -178,7 +178,7 @@ int main(void) {
   		GPIO_PORTD_DATA_R &= ~(0b0100); // PD2’i 0 yap
   		GPIO_PORTD_DATA_R &= ~(0b01000); // PD3’i 0 yap
   	 }
-  else if (button_sol == 0) { // button basili ise 
+  else if (button_sol == 0) { // buton basili ise 
   		GPIO_PORTD_DATA_R |= 0b00100; // PD2’i 1 yap
   		GPIO_PORTD_DATA_R &= ~(0b00010); // PD1’i 0 yap
   		GPIO_PORTD_DATA_R &= ~(0b01000); // PD3’i 0 yap
