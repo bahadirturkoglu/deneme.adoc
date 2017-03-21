@@ -14,11 +14,6 @@ Güncelleme için: +
 
 Eğer projenizde bu dosyalar bulunmuyorsa, hazır proje dosyalarının yeni versiyonunu “01-Gelistirme_Ortami/proje_dosyalari” altindan indirebilirsiniz. +
 
-Güncelleme için: + 
-
-* yeni indirdiğiniz dosya ile yeni proje açabilirsiniz +
-* veya hazır projeye sadece utils klasörünü yukarıdaki resimdeki gibi ekleyebilirsiniz +
-
 = ÖNEMLİ: Proje Ayarları Güncellemesi
 
 Proje isminde sağa tıklayarak açılan bölümde *“Properties”* e tıklayınız.
