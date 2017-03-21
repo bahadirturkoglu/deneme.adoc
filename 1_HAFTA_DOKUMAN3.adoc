@@ -25,6 +25,7 @@ eski +
 https://drive.google.com/file/d/0Bw8VB6WrbOkiYWFnX0hqWl9HbWM/view?usp=sharing +
 yeni +
 https://drive.google.com/file/d/0Bw8VB6WrbOkiS19nV0hiSm5nQ2M/view
+
 == 1.3. Proje açma
 
 Eclipse geliştirme ortamında kartımız için proje oluşturma anlatılmıştır +
