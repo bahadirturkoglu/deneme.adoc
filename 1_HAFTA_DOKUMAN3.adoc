@@ -15,9 +15,9 @@
 
 == 1.2.Gerekli Dosyalar
 ** Stellaris Launchpad kullananlar için: Stellaris_Launchpad.tar.gz +
-eski+
-https://drive.google.com/file/d/0Bw8VB6WrbOkiSmptUHhGYVAwMzg/view?usp=sharing 
-yeni+
+eski +
+https://drive.google.com/file/d/0Bw8VB6WrbOkiSmptUHhGYVAwMzg/view?usp=sharing +
+yeni +
 https://drive.google.com/file/d/0Bw8VB6WrbOkiNHV5UjFCU0EtaUk/view
 
 ** Tiva C Launch kullananlar için : Tiva_C_Launchpad.tar.gz +
