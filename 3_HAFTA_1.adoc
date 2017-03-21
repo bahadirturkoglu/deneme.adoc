@@ -121,14 +121,14 @@ image::Capture6.PNG[R]
 
 
 
-= PORTE’ye Dışardan Buton Bağlama
+= PORTD’ye Dışardan Led Bağlama ve PORTF Butonları ile Kontrol Etme
 
 [source,c]
 
 ---------------------------------------------------------------------
 
 #include <stdint.h>
-//#include "inc/tm4c123gh6pm.h"
+#include "inc/tm4c123gh6pm.h"
 
 // stellaris #include "inc/lm4f120h5qr.h"
 
@@ -170,25 +170,25 @@ int main(void) {
   	 button_sol = GPIO_PORTF_DATA_R & 0b10000;
   if(button_sol == 0 && button_sag == 0)
   	  {
-  		  GPIO_PORTD_DATA_R |= 0b01110;
+  		  GPIO_PORTD_DATA_R |= 0b01110; PD(1,2,3)’ü 1 yap
   	  }
-  else if (button_sag == 0) {
-  		 // kirmizi ledi yak
-  		 GPIO_PORTD_DATA_R |= 0b00010;
-  		GPIO_PORTD_DATA_R &= ~(0b01100);
-  		GPIO_PORTD_DATA_R &= ~(0b00100);
+  else if (button_sag == 0) { // buton basılı ise
+  		
+  		GPIO_PORTD_DATA_R |= 0b00010; // PD1’i 1 yap
+  		GPIO_PORTD_DATA_R &= ~(0b0100); // PD2’i 0 yap
+  		GPIO_PORTD_DATA_R &= ~(0b01000); // PD3’i 0 yap
   	 }
-  else if (button_sol == 0) { // button basili ise mavi ledi yak
-  		 GPIO_PORTD_DATA_R |= 0b00100;
-  		GPIO_PORTD_DATA_R &= ~(0b00010);// 0x02// 0b01000
-  		GPIO_PORTD_DATA_R &= ~(0b01000);// 0x02
+  else if (button_sol == 0) { // button basili ise 
+  		GPIO_PORTD_DATA_R |= 0b00100; // PD2’i 1 yap
+  		GPIO_PORTD_DATA_R &= ~(0b00010); // PD1’i 0 yap
+  		GPIO_PORTD_DATA_R &= ~(0b01000); // PD3’i 0 yap
   	 }
 
   else {
 
-  	    GPIO_PORTD_DATA_R &= ~(0b00100);
-  		GPIO_PORTD_DATA_R &= ~(0b00010);
-  		GPIO_PORTD_DATA_R &= ~(0b01000);
+  	         GPIO_PORTD_DATA_R &= ~(0b00100); // PD1’i 1 yap
+  		GPIO_PORTD_DATA_R &= ~(0b00010);  // PD2’i 1 yap
+  		GPIO_PORTD_DATA_R &= ~(0b01000);  // PD3’i 1 yap
   	 }
    }
 }
