@@ -95,7 +95,7 @@ Ayarları aşağıdaki gibi yapınız. +
 image::Capture17.PNG[R]
 
 
-Port kısmında seçeneklerde /dev/ttyACM1 gibi görünebilir. /dev/ttyACM ile başlayan portu seçin. +
+Port kısmında seçeneklerde /dev/ttyACM1 gibi görünebilir. /dev/ttyACM ile başlayan portu seçin.(kod çalışır durumdayken deneyiniz) +
 
 Karttaki program çalışır durumdaysa Serial port terminal ekranında +
 
