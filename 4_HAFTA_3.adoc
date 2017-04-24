@@ -15,3 +15,67 @@ IntDefaultHandler yerine ilgili fonksiyonları yaziniz +
 image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/sis2.PNG[R]
 
 Yukarıdaki ayarlamalardan sonra aşağıdaki kodu stellaris kartına yüklediğinizde 0.1 saniye aralıklarla systick kesmesi üretilecek. Her kesme olduğunda da PORTF’ye bağlanan led yanıp sönecek. +
+
+
+[source,c]
+---------------------------------------------------------------------
+
+#include <stdint.h>
+#include "inc/tm4c123gh6pm.h"
+// stellaris icin: #include "inc/lm4f120h5qr.h"
+
+/** init_port_F() fonksiyonu PORT F’yi aktifleştiriyor. */
+void init_port_F() {
+	volatile unsigned long tmp; // bu degisken gecikme yapmak icin gerekli
+	SYSCTL_RCGCGPIO_R |= 0x00000020;  // 1) activate clock for Port F
+	tmp = SYSCTL_RCGCGPIO_R;    	// allow time for clock to start
+	GPIO_PORTF_LOCK_R = 0x4C4F434B;   // 2) unlock GPIO Port F
+	GPIO_PORTF_CR_R = 0x1F;       	// allow changes to PF4-0
+	// only PF0 needs to be unlocked, other bits can't be locked
+	GPIO_PORTF_AMSEL_R = 0x00;    	// 3) disable analog on PF
+	GPIO_PORTF_PCTL_R = 0x00000000;   // 4) PCTL GPIO on PF4-0
+	GPIO_PORTF_DIR_R = 0x0E;      	// 5) PF4,PF0 in, PF3-1 out
+	GPIO_PORTF_AFSEL_R = 0x00;    	// 6) disable alt funct on PF7-0
+	GPIO_PORTF_PUR_R = 0x11;      	// enable pull-up on PF0 and PF4
+	GPIO_PORTF_DEN_R = 0x1F;      	// 7) enable digital I/O on PF4-0
+}
+
+
+/** systick_handler() fonksiyonu her systick kesmesi olduğunda çalışacak. */
+void systick_handler() { 
+   // ledin durumunu ters cevir
+   GPIO_PORTF_DATA_R ^= 0b00010;
+}
+
+/** SysTick_Init() fonksiyonu systick kesmesini aktifleştiriyor. Kaç saniyede bir kesme üretileceğini verilen period parametresine göre ayarlanıyor. */
+void SysTick_Init(unsigned long period){
+NVIC_ST_CTRL_R = 0;     	// disable SysTick during setup
+NVIC_ST_RELOAD_R = period-1; // reload value
+NVIC_ST_CURRENT_R = 0;  	// any write to current clears it
+NVIC_SYS_PRI3_R = (NVIC_SYS_PRI3_R&0x00FFFFFF)|0x40000000; // priority 2
+NVIC_ST_CTRL_R = 0x07; // enable SysTick with core clock and interrupts
+// enable interrupts after all initialization is finished
+}
+
+static inline void disable_interrupts() { //Kesmeleri pasif yap
+   asm("CPSID I");
+}
+static inline void enable_interrupts() { // Kesmeleri aktifleştir
+   asm("CPSIE I");
+}
+static inline void wait_for_interrupt() { // Kesme olana kadar bekle
+   asm("WFI");
+}
+int main() {
+   init_port_F();
+   SysTick_Init(1600000); // 1600000 clockta bir kesme uret
+   // islemcinin frekansi 16Mhz = 16000000 (not: bu deger programlanarak degistirilebilir)
+   // 1600000/16000000 = 0.1 saniyede bir kesme uretir
+   enable_interrupts();
+   while (1) {
+  	 wait_for_interrupt();
+   }
+}
+
+---------------------------------------------------------------------
+
