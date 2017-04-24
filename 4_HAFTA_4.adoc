@@ -29,10 +29,13 @@ startup_gcc.c dosyasındaki ayarlamarı aşağıdaki gibi ayarlayınız. *“4.3
 IntDefaultHandler yerine ilgili fonksiyonları yazin +
 	systick_handler,                  	// The SysTick handler +
 
-
+[source,c]
+---------------------------------------------------------------------
 
 #include <stdint.h>
-#include "inc/lm4f120h5qr.h"
+#include "inc/tm4c123gh6pm.h"
+// stellaris icin: #include "inc/lm4f120h5qr.h"
+
 
 void init_port_F() {
 	volatile unsigned long tmp; // bu degisken gecikme yapmak icin gerekli
@@ -123,3 +126,5 @@ int main() {
    	   islem_2();
 	}
 }
+
+---------------------------------------------------------------------
