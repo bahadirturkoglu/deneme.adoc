@@ -1,4 +1,4 @@
-  = SysTick kesmesi ile led yakıp söndürme 
+= SysTick kesmesi ile led yakıp söndürme 
 
 Kesmeler bir programın daha önemli başka bir görevin yerine getirilmesi için kesilmesine izin veren bir mekanizmadır. Bu görevler tuş takımından bir karakter okunması veya farenin yeni koordinatlarının alınması gibi işlemler olabilir. Güncel bir örnek vermek gerekirse akıllı telefonunuzda oyun oynadığınız esnada arama gelmesi bir kesmedir. Systick kesmesi özel bir kesmedir. Bu kesme ile ilgili bilgi aşağıda verilmiştir. +
 
