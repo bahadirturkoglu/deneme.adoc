@@ -6,4 +6,12 @@ Eclipste Sol palette bulunan projemizi seçiyoruz. Projemizin alt klasörşlerin
 
 image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/sis1.PNG[R]
 
+2) Şekil 2’de // The vector table yazan kisimdaki dizide aşağıdaki iki satırda: +
+	*IntDefaultHandler,*                  	// The SysTick handler +
+	
+IntDefaultHandler yerine ilgili fonksiyonları yaziniz + 
+	*systick_handler,*                  	// The SysTick handler +
+
 image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/sis2.PNG[R]
+
+Yukarıdaki ayarlamalardan sonra aşağıdaki kodu stellaris kartına yüklediğinizde 0.1 saniye aralıklarla systick kesmesi üretilecek. Her kesme olduğunda da PORTF’ye bağlanan led yanıp sönecek. +
