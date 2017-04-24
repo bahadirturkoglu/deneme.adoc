@@ -29,3 +29,97 @@ startup_gcc.c dosyasındaki ayarlamarı aşağıdaki gibi ayarlayınız. *“4.3
 IntDefaultHandler yerine ilgili fonksiyonları yazin +
 	systick_handler,                  	// The SysTick handler +
 
+
+
+#include <stdint.h>
+#include "inc/lm4f120h5qr.h"
+
+void init_port_F() {
+	volatile unsigned long tmp; // bu degisken gecikme yapmak icin gerekli
+	SYSCTL_RCGCGPIO_R |= 0x00000020;  // 1) activate clock for Port F
+	tmp = SYSCTL_RCGCGPIO_R;     // allow time for clock to start
+	GPIO_PORTF_LOCK_R = 0x4C4F434B;   // 2) unlock GPIO Port F
+	GPIO_PORTF_CR_R = 0x1F;        // allow changes to PF4­0
+	// only PF0 needs to be unlocked, other bits can't be locked
+	GPIO_PORTF_AMSEL_R = 0x00;     // 3) disable analog on PF
+	GPIO_PORTF_PCTL_R = 0x00000000;   // 4) PCTL GPIO on PF4­0
+	GPIO_PORTF_DIR_R = 0x0E;       // 5) PF4,PF0 in, PF3­1 out
+	GPIO_PORTF_AFSEL_R = 0x00;     // 6) disable alt funct on PF7­0
+	GPIO_PORTF_PUR_R = 0x11;       // enable pull­up on PF0 and PF4
+	GPIO_PORTF_DEN_R = 0x1F;       // 7) enable digital I/O on PF4­0
+}
+
+void init_port_B() {
+	volatile unsigned long delay;
+	SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOB;
+	delay = SYSCTL_RCGC2_R;
+	GPIO_PORTB_DIR_R |= 0xFF;
+	GPIO_PORTB_AFSEL_R &= ~0xFF;
+	GPIO_PORTB_DEN_R |= 0xFF;
+}
+
+// 0-9 arasindaki sayilarin g,f,e,d,c,b,a sirasiyla 7-segment kodlari
+const uint8_t kodlar[] = {
+	~0b00111111,
+	~0b00000110,
+	~0b01011011,
+	~0b01001111,
+	~0b01100110,
+	~0b01101101,
+	~0b01111101,
+	~0b00000111,
+	~0b01111111,
+	~0b01101111
+};
+
+volatile int sayi = 0;
+
+void systick_handler() { // systick kesmesi oldugunda bu fonksiyon calisacak
+	sayi = (sayi + 1) % 10;
+	GPIO_PORTB_DATA_R = kodlar[sayi];
+}
+
+void SysTick_Init(unsigned long period){
+ NVIC_ST_CTRL_R = 0;     	// disable SysTick during setup
+ NVIC_ST_RELOAD_R = period-1;// reload value
+ NVIC_ST_CURRENT_R = 0;  	// any write to current clears it
+ NVIC_SYS_PRI3_R = (NVIC_SYS_PRI3_R&0x00FFFFFF)|0x40000000; // priority 2
+ NVIC_ST_CTRL_R = 0x07; // enable SysTick with core clock and interrupts
+ // enable interrupts after all initialization is finished
+}
+
+static inline void disable_interrupts() {
+	asm("CPSID I");
+}
+
+static inline void enable_interrupts() {
+	asm("CPSIE I");
+}
+
+static inline void wait_for_interrupt() {
+	asm("WFI");
+}
+
+// button basiliysa ledi yak, degilse sondur
+void islem_2() {
+	int button;
+	button = GPIO_PORTF_DATA_R & 0b00001;
+	if ( button == 0 )
+ 		GPIO_PORTF_DATA_R |= 0b00100;
+	else
+ 		GPIO_PORTF_DATA_R &= ~0b00100;
+}
+
+int main() {
+    init_port_B();
+    init_port_F();
+
+	// 0.1 saniyede bir kesme uretir
+	SysTick_Init(16000000); // 1600000 clockta bir kesme uret
+
+	enable_interrupts();
+
+	while (1) {
+   	   islem_2();
+	}
+}
