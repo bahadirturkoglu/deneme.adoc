@@ -1,0 +1,21 @@
+= Eş Zamanlı İşlem Yapma
+
+Aşağıdaki iki işlemin aynı anda yapılmak istenilmektedir. +
+•	seven segmente sayma işlemi yap +
+•	Buttona basıldığında ledi yak, basılmadığında söndür +
+
+Bu örnekte: +
+•	7-segment sayıcı systick kesmesi ile +
+•	button kesme kullanılmadan, surekli kontrol ederek kullanılmaktadır +
+
+Seven segment bağlantıları *“4.1_seven_segment.docx”* dosyasında anlatılmıştı. Bir sorunla karşılaşırsanız dosyayı kontrol edebilirsiniz. +
+
+7-segment sayıcının islemi *“systick_handler”* fonksiyonunda yapılmaktadır. Buttonun islemi ise *“main”* fonksiyonunda sonsuz döngünün içerisinde yapılmaktadır. +
+
+Aşağıdaki kodu çalıştırdıktan sonra buttona basılması ile ledin sönmesi arasındaki gecikmeyi test ediniz. +
+
+Programı *“4.2_es_zamanli_islem_problemi.docx”* ile karşılaştırınız. +
+
+*Not* : Button da kesme ile kullanılırsa daha az islemci zamanı (enerji tüketimi) ile aynı işlem yapılabilir. +
+
+startup_gcc.c dosyasındaki ayarlamarı aşağıdaki gibi ayarlayınız. *“4.3_systick_kesmesi.docx”* dosyasında nasıl yapılacağı anlatılmıştı. Bir sorunla karşılaşırsanız o dosyaya bakabilirsiniz. +
