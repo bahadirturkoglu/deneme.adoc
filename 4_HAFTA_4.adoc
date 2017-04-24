@@ -20,10 +20,10 @@ Programı *“4.2_es_zamanli_islem_problemi.docx”* ile karşılaştırınız. 
 
 startup_gcc.c dosyasındaki ayarlamarı aşağıdaki gibi ayarlayınız. *“4.3_systick_kesmesi.docx”* dosyasında nasıl yapılacağı anlatılmıştı. Bir sorunla karşılaşırsanız o dosyaya bakabilirsiniz. +
 
-1) include kisimlarindan sonra asagidaki fonksiyon prototiplerini ekleyin +
+*1)* include kisimlarindan sonra asagidaki fonksiyon prototiplerini ekleyin +
 	extern void systick_handler(); +
 
-2) // The vector table yazan kisimdaki dizide aşağıdaki iki satırda: +
+*2)* // The vector table yazan kisimdaki dizide aşağıdaki iki satırda: +
 	IntDefaultHandler,                  	// The SysTick handler +
 
 IntDefaultHandler yerine ilgili fonksiyonları yazin +
