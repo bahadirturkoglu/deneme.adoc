@@ -4,4 +4,4 @@ Kesmeler bir programın daha önemli başka bir görevin yerine getirilmesi içi
 
 Eclipste Sol palette bulunan projemizi seçiyoruz. Projemizin alt klasörşlerinden src klasörü içinde bulunan *startup_gcc.c* isimli dosyayı açıp aşağıdaki değişiklikleri uygulayınız. +
 
-image::
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/resim1.21.png[R]
