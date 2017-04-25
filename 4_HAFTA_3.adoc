@@ -5,7 +5,7 @@ Kesmeler bir programın daha önemli başka bir görevin yerine getirilmesi içi
 Eclipste Sol palette bulunan projemizi seçiyoruz. Projemizin alt klasörşlerinden src klasörü içinde bulunan *startup_gcc.c* isimli dosyayı açıp aşağıdaki değişiklikleri uygulayınız. +
 
 1) include kisimlarindan sonra asagidaki fonksiyon prototiplerini ekleyiniz +
-	extern void systick_handler(); +
+	*extern void systick_handler();* +
 
 image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/SİS3.PNG[R]
 
