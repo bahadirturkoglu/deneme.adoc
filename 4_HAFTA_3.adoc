@@ -7,7 +7,7 @@ Eclipste Sol palette bulunan projemizi seçiyoruz. Projemizin alt klasörşlerin
 1) include kisimlarindan sonra asagidaki fonksiyon prototiplerini ekleyiniz +
 	extern void systick_handler(); +
 
-image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/sis1.PNG[R]
+image::https://github.com/bahadirturkoglu/deneme.adoc/raw/master/SİS3.PNG[R]
 
 2) Şekil 2’de // The vector table yazan kisimdaki dizide aşağıdaki iki satırda: +
 	*IntDefaultHandler,*                  	// The SysTick handler +
