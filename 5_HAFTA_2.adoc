@@ -1,0 +1,9 @@
+= Zamanlanmış İşlem Yapmak
+
+Aşağıdaki iki işlem aynı anda yapılmak istenilmektedir. +
+•	Seven segmente sayma işlemi yap (saniyede bir arttır) +
+•	Ledi yakıp söndür (2.5 saniye yak, 2.5 saniye söndür) +
+
+Bu örnekte frekansı 100 olarak ayarlanmış systick kesmesi ile zaman ölçümü yapılmaktadır. Bu zaman ölçümüne göre yukarıdaki işlemlerin yapılması sağlanmaktadır. +
+
+İki işlem de zamanla tetiklenen bayrak değişken kullanılarak main fonksiyonu içerisinde yapılmaktadır. +
