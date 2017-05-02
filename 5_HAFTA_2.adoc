@@ -7,3 +7,43 @@ Aşağıdaki iki işlem aynı anda yapılmak istenilmektedir. +
 Bu örnekte frekansı 100 olarak ayarlanmış systick kesmesi ile zaman ölçümü yapılmaktadır. Bu zaman ölçümüne göre yukarıdaki işlemlerin yapılması sağlanmaktadır. +
 
 İki işlem de zamanla tetiklenen bayrak değişken kullanılarak main fonksiyonu içerisinde yapılmaktadır. +
+
+   	if (flag_ledi_ters_cevir) { // flag_ledi_ters_cevir != 0 ise islem yap
+  		 flag_ledi_ters_cevir = 0; // islemi tekrar yapmamak icin sifirla
+ 		 GPIO_PORTF_DATA_R ^= 0b00100;
+ 	 }
+   
+	  if (flag_sayi_arttir) {
+		// 7-segmentte sayi gosterme islemi ...
+	}
+
+Bu bayrak değişken systick_handler fonksiyonu içerisinde değiştirilmektedir: +
+
+#define SYSTICK_HZ 100
+
+void systick_handler() {
+   systick_count++; // kac tane systick kesmesi oldugunu say
+
+   // 1 saniyede bir sayiyi arttirma flagini 1 yap
+   // saydigimiz systick sayisi 100'e tam bolunuyorsa 1 saniye gecmistir
+   if ((systick_count % (SYSTICK_HZ * 1)) == 0)
+  	 flag_sayi_arttir = 1;
+
+   // 5/2=2.5 saniyede bir ledi ters cevirme isleminin flagini 1 yap
+   if (systick_count % (SYSTICK_HZ * 5/2) == 0)
+  	 flag_ledi_ters_cevir = 1;
+}
+
+Yukarıdaki kodda zaman systick kesmesi sayılarak hesaplanmaktadır. Her 100 kesme olduğunda 1 saniye geçtiği anlaşılıp bayrak değişken 1 yapılmaktadır. +
+
+startup_gcc.c +
+1) include kisimlarindan sonra asagidaki fonksiyon prototiplerini ekleyin +
+	extern void systick_handler();
+
+2) // The vector table yazan kisimdaki dizide aşağıdaki iki satırda: +
+	IntDefaultHandler,                  	// The SysTick handler +
+
+IntDefaultHandler yerine ilgili fonksiyonları yazin +
+	systick_handler,                  	// The SysTick handler +
+
+
