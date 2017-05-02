@@ -1,0 +1,94 @@
+= PortF’deki butonda kesme kullanımı
+Bu örnekte PORTF’ye bağlı butona basıldığında kesme üretiliyor. +
+
+startup_gcc.c +
+1) include kisimlarindan sonra asagidaki fonksiyon prototiplerini ekleyin +
+	*extern void PortF_interrupt_handler();*
+
+2) // The vector table yazan kisimdaki dizide aşağıdaki iki satırda: +
+	*IntDefaultHandler,*                  	// GPIO Port F
+
+IntDefaultHandler yerine ilgili fonksiyonları yazin +
+	*PortF_interrupt_handler,*                  	// GPIO Port F
+  
+
+
+[source,c]
+---------------------------------------------------------------------
+
+#include <stdint.h>
+#include <stdbool.h>
+
+#include "inc/tm4c123gh6pm.h"
+// stellaris icin: #include "inc/lm4f120h5qr.h"
+
+static inline void disable_interrupts() {
+   asm("CPSID I");
+}
+
+static inline void enable_interrupts() {
+   asm("CPSIE I");
+}
+
+static inline void wait_for_interrupt() {
+   asm("WFI");
+}
+
+void init_port_F() {
+   volatile unsigned long tmp; // bu degisken gecikme yapmak icin gerekli
+   SYSCTL_RCGCGPIO_R |= 0x00000020;  // 1) activate clock for Port F
+   tmp = SYSCTL_RCGCGPIO_R;    	// allow time for clock to start
+   GPIO_PORTF_LOCK_R = 0x4C4F434B;   // 2) unlock GPIO Port F
+   GPIO_PORTF_CR_R = 0x1F;       	// allow changes to PF4-0
+   // only PF0 needs to be unlocked, other bits can't be locked
+   GPIO_PORTF_AMSEL_R = 0x00;    	// 3) disable analog on PF
+   GPIO_PORTF_PCTL_R = 0x00000000;   // 4) PCTL GPIO on PF4-0
+   GPIO_PORTF_DIR_R = 0x0E;      	// 5) PF4,PF0 in, PF3-1 out
+   GPIO_PORTF_AFSEL_R = 0x00;    	// 6) disable alt funct on PF7-0
+   GPIO_PORTF_PUR_R = 0x11;      	// enable pull-up on PF0 and PF4
+   GPIO_PORTF_DEN_R = 0x1F;      	// 7) enable digital I/O on PF4-0
+}
+
+void PF4_interrupt_init() {
+   GPIO_PORTF_IS_R &= ~0b10000; 	// (d) PC4 is edge-sensitive
+   GPIO_PORTF_IBE_R &= ~0b10000;	// 	PC4 is not both edges
+   GPIO_PORTF_IEV_R &= ~0b10000;	// 	PC4 falling edge event
+   GPIO_PORTF_ICR_R = 0b10000;  	// (e) clear flag4
+   GPIO_PORTF_IM_R |= 0b10000;  	// (f) arm interrupt on PC4
+
+   /*
+    * PORT icin kullanilan degerlerin anlami icin
+    * http://users.ece.utexas.edu/~valvano/Volume1/E-Book/C12_Interrupts.htm#12_3
+    * Tablo 12.1'e bakiniz
+    */
+   NVIC_PRI7_R = (NVIC_PRI7_R & 0xFF00FFFF) | 0x00A00000; // (g) priority 5
+   NVIC_EN0_R |= (1<<30);          	// (h) enable interrupt 30 in NVIC
+}
+
+volatile uint32_t kesme_sayisi = 0;
+
+void PortF_interrupt_handler() {
+   disable_interrupts();
+   GPIO_PORTF_ICR_R = 0b10000; // clear interrupt flag4
+
+   kesme_sayisi++;
+
+   // yesil ledi ters cevir
+   GPIO_PORTF_DATA_R ^= 0b01000;
+
+   enable_interrupts();
+}
+
+int main() {
+
+   init_port_F();
+   PF4_interrupt_init();
+
+   enable_interrupts();
+
+   while (1) {
+  	 wait_for_interrupt();
+   }
+}
+
+---------------------------------------------------------------------
