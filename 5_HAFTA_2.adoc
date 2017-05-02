@@ -41,9 +41,9 @@ startup_gcc.c +
 	extern void systick_handler();
 
 2) // The vector table yazan kisimdaki dizide aşağıdaki iki satırda: +
-	IntDefaultHandler,                  	// The SysTick handler +
+	* IntDefaultHandler, *                 	// The SysTick handler +
 
 IntDefaultHandler yerine ilgili fonksiyonları yazin +
-	systick_handler,                  	// The SysTick handler +
+	* systick_handler,  *                	// The SysTick handler +
 
 
