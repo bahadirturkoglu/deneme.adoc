@@ -1,0 +1,71 @@
+*Uyarı*: Bu dokümandaki kodun çalışması için “Hazır Fonksiyonları Kullanmak İçin Proje Ayarları” dokümanındaki ayarların yapılması gerekmektedir. +
+
+Bu örnek işlemciyi farklı frekansta çalıştırma ayarlarını içermektedir. Yorum satırlarını aktifleştirip farklı parametrelerle deneyebilirsiniz. +
+
+
+
+[source,c]
+---------------------------------------------------------------------
+
+
+#include <stdint.h>
+#include <stdbool.h>
+ 
+#include "inc/tm4c123gh6pm.h"
+// stellaris icin: #include "inc/lm4f120h5qr.h"
+ 
+#include "inc/hw_types.h"
+#include "driverlib/sysctl.h" // SysCtl ile baslayan fonksiyonlarda gerekli
+ 
+/*
+ * clock network ile ilgili bilgi
+ * http://www.hackit.co.in/2014/07/how-to-change-system-clock-frequecy-of.html
+ */
+ 
+void init_port_F() {
+	volatile unsigned long delay;
+	SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOF;
+	delay = SYSCTL_RCGC2_R;
+	GPIO_PORTF_DIR_R |= 0b01110;
+	GPIO_PORTF_AFSEL_R &= ~0b01110;
+	GPIO_PORTF_DEN_R |= 0b01110;
+}
+ 
+int main() {
+	volatile unsigned long delay;
+ 
+	// USE_PLL -> 200 / SYSDIV_X
+	// USE_OSC -> 16  / SYSDIV_X
+ 
+	// 200 / 2.5 = 80 Mhz (clock source crystal oscilator)
+	SysCtlClockSet(SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN | SYSCTL_XTAL_16MHZ);
+	volatile unsigned long clock_period_1 = SysCtlClockGet();
+ 
+//	// 200 /5 = 40 MHz
+//	SysCtlClockSet(SYSCTL_SYSDIV_5 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN | SYSCTL_XTAL_16MHZ);
+//	volatile unsigned long clock_period_2 = SysCtlClockGet();
+ 
+//	// 200 /20 = 10 MHz
+//	SysCtlClockSet(SYSCTL_SYSDIV_10 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN | SYSCTL_XTAL_16MHZ);
+//	volatile unsigned long clock_period_3 = SysCtlClockGet();
+ 
+//	// 16 / 1 = 16 MHz
+//	SysCtlClockSet(SYSCTL_SYSDIV_1 | SYSCTL_USE_OSC | SYSCTL_OSC_MAIN | SYSCTL_XTAL_16MHZ);
+//	volatile unsigned long clock_period_4 = SysCtlClockGet();
+ 
+//	// 16 / 2 = 8 MHz
+//	SysCtlClockSet(SYSCTL_SYSDIV_2 | SYSCTL_USE_OSC | SYSCTL_OSC_MAIN | SYSCTL_XTAL_16MHZ);
+//	volatile unsigned long clock_period_5 = SysCtlClockGet();
+ 
+	init_port_F();
+ 
+	while (1) {
+    	GPIO_PORTF_DATA_R ^= 0b00100;
+    	for (delay = 0 ; delay < 1000000 ; delay++)
+        	/* */;
+	}
+}
+
+
+---------------------------------------------------------------------
+
