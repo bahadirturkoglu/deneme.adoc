@@ -5,6 +5,7 @@ Dörtlü 7-segmentte sayı yazmayı sağlayan program. (Timer kullanmadan) +
 Seven segment için gerekli bağlantılar Şekil 1’de gösterilmiştir. 
 Bu bağlantıları yaptıktan sonra aşağıdaki kod parçasını stellaris kartına yükleyiniz ve seven segmentte görmek istediğiniz sayıyı kod parçasındaki “sayi“ değişkenine atayınız +
 
+image::4lu.PNG[R]
 
 
 [source,c]
