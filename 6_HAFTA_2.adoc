@@ -1,4 +1,4 @@
-=Dörtlü Seven Segment
+= Dörtlü Seven Segment
 
 Dörtlü 7-segmentte sayı yazmayı sağlayan program. (Timer kullanmadan) +
 
